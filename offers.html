@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers</title>
+		    <link rel="stylesheet" href="../header-footer.css">
+
+    <link rel="stylesheet" href="offers.css">
+	
+			  <style>
+			  .dark-mode-button {
+    padding: 12px 40px; /* Adjust padding to change button size */
+    border: 2px solid #548776; /* Set border color and thickness */
+    border-radius: 40px; /* Add curved borders */
+    background-color: #548776;
+    color: white; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;   /* Cursor changes to pointer when hovered */
+	    margin-left: 78%; /* Add margin to the left to move the button right */
+		 position: relative; /* Use relative positioning */
+    bottom: 12px; /* Move up by reducing the bottom margin */
+
+}
+
+/* Style for the button when hovering over it */
+.dark-mode-button:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+			  
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+ 
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+		.dark-mode .breadcrumbs a {
+    color: #ffffff; /* Set breadcrumb links to white in dark mode */
+}
+
+        .dark-mode .contact-item a{
+            color: white;
+        }
+		
+    </style>
+
+</head>
+
+<body>
+
+    <header> 
+        <div id="logo">
+            <img src="photo/logo.png" alt="Logo">
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                  <li><a href="../home/index.html" class="nav-link">Home</a></li>
+                  <li> <a href="../owner/Owner.html" class="nav-link">Owner</a></li>
+                  <li> <a href="../customer/customer.html" class="nav-link">Customer</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+	
+	 <div>
+<button onclick="darkMode()" id="change" class="dark-mode-button">Dark Mode</button>
+    </div>
+
+    <div class="page-header">
+        <h1 id="Tit">Offers</h1>
+        <hr class="line">
+        <div class="breadcrumbs">
+            <a href="../home/index.html">Home page</a> &gt; <a href="../owner/Owner.html">Owner</a> &gt; <a href="../offers/offers.html">Offers</a> &gt; 
+
+        </div>
+    </div>  
+    <div class="container">
+      <div class="offer">
+        <h2>Offer 1</h2>
+        <img src="photo/image1.png" alt="Offer 1">
+        <p class="offer-description">Iftar offer for the month of Ramadan, a complete set for only 89 riyals</p>
+        <input type="checkbox" class="checkbox">
+      </div>
+      <div class="offer">
+        <h2>Offer 2</h2>
+        <img src="photo/image2.png" alt="Offer 2">
+        <p class="offer-description">A 22 percent discount on the total bill on the occasion of Saudi Foundation Day</p>
+        <input type="checkbox" class="checkbox">
+      </div>
+      <div class="offer">
+        <h2>Offer 3</h2>
+        <img src="photo/image3.png" alt="Offer 3">
+        <p class="offer-description">Exclusive offer for loyalty program members All days of the week</p>
+        <input type="checkbox" class="checkbox">
+      </div>
+      <div class="offer">
+        <h2>Offer 4</h2>
+        <img src="photo/image4.png" alt="Offer 4">
+        <p class="offer-description">50 percent discount on the total bill on the occasion of Saudi National Day</p>
+        <input type="checkbox" class="checkbox">
+      </div>
+      <div class="offer">
+        <h2>Offer 5</h2>
+        <img src="photo/image5.png" alt="Offer 5">
+        <p class="offer-description">Buy one item and get the other for free for a limited time</p>
+        <input type="checkbox" class="checkbox">
+      </div>
+      <div class="offer">
+        <h2>Offer 6</h2>
+        <img src="photo/image6.png" alt="Offer 6">
+        <p class="offer-description">Open buffet offer with an Italian taste during the month of Ramadan</p>
+        <input type="checkbox" class="checkbox">
+      </div>
+    </div>
+
+    <button class="delete-all-btn" onclick="deleteSelected()">Delete Selected</button>
+
+    
+    <form id="newOfferForm">
+    <div class="offer-info-container">
+     <h2>NEW OFFER</h2>
+    <div class="line-container">
+        <hr class="line">
+    </div>
+      <div class="offer-info">
+        <label for="offerName">Offer Name</label>
+        <div class="input-container">
+        <input type="text" id="offerName" name="offerName">
+        </div>
+      </div>
+      
+      <div class="offer-info">
+        <label for="description">Description</label>
+        <div class="input-container">
+        <input type="text" id="description" name="description">
+        </div>
+      </div>
+    
+          <div class="offer-info">
+          <div class="offer-info upload-label">
+
+        <label for="imageUpload">Upload image</label>
+        
+<div class="picture-info">
+    <img src="photo/arrow_icon.png" alt="arrow icon">
+</div>
+        
+    <div class="picture-container">
+        <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+        <label for="imageUpload">
+            <img src="photo/upload.png" alt="Upload Image">
+        </label>
+    </div>
+        
+    </div>
+  </div>
+  </div>
+  
+  <div class="buttons">
+    <a href="#Tit"><button type="button"> Cancel</button></a>
+
+    <a href="#Tit"><button type="submit">add offer</button></a>
+  </div>
+  
+  
+  <div class="AccesKey"> 
+    <a href="../home/index.html" accesskey="H"></a>
+    <a href="../customer/customer.html" accesskey="C"></a>
+    <a href="../owner/Owner.html" accesskey="N"></a>
+</div>
+      </form>
+
+   
+</main>
+    <footer>
+    <div class="footer-left">
+        <img src="photo/logo.png" alt="Logo">
+        <p>&copy; 2024 swiftbite. All rights reserved.</p>
+    </div>
+    <div class="footer-middle">
+             <div class="vertical-line">
+            
+<h3>Get in touch</h3>
+</div><div class="contact-info">
+            <div class="contact-item">
+                <img src="photo/phone-icon.png" alt="Phone">
+                <p>+966123456789</p>
+            </div>
+            <div class="contact-item">
+                <img src="photo/email-icon.png" alt="Email">
+<p><a href="mailto:swiftbite@gmail.com">swiftbite@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-right">
+             <div class="vertical-line">
+<h3>About Us</h3></div>
+        <p>We simplify your dining experience. Explore local restaurants effortlessly, Join us and redefine your culinary journey.</p>
+        <div class="social-icons">
+            <img src="photo/facebook-icon.png" alt="Facebook">
+            <img src="photo/twitter-icon.png" alt="Twitter">
+            <img src="photo/instagram-icon.png" alt="Instagram">
+            <img src="photo/linkedin-icon.png" alt="LinkedIn">
+        </div>
+    </div>
+    </footer>
+	
+	 <script>
+        function deleteSelected() {
+            const checkboxes = document.querySelectorAll('.checkbox');
+            let atLeastOneSelected = false;
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    atLeastOneSelected = true;
+                }
+            });
+
+            if (!atLeastOneSelected) {
+                alert("Please select at least one offer.");
+            } else {
+                if (confirm("Are you sure you want to delete the selected offers?")) {
+                }
+            }
+        }
+
+        document.getElementById('newOfferForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const offerName = document.getElementById('offerName').value.trim();
+            const description = document.getElementById('description').value.trim();
+            const imageUpload = document.getElementById('imageUpload').value.trim();
+
+            if (offerName === '' || description === '' || imageUpload === '') {
+                alert('Please fill in all fields.');
+            } else {
+                document.getElementById('newOfferForm').reset();
+            }
+        });
+
+        function cancelForm() {
+            document.getElementById('newOfferForm').reset();
+        }
+		function deleteSelected() {
+    const checkboxes = document.querySelectorAll('.checkbox');
+
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            checkbox.checked = false; 
+        }
+    });
+
+    alert("Selected offers deleted.");
+}
+
+
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    
+    </script>
+	
+	
+    
+    </body>
+    </html>
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Restaurant Page</title>
+  	    <link rel="stylesheet" href="../header-footer.css">
+
+  
+
+</head>
+
+<!-- start style-->
+<style>
+
+  #Main-Category ,#Sweet-Category ,#Drinks-Category{
+display: flex;
+flex-direction: column;
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(2,600px) ;
+grid-template-rows:repeat(3,250px) ;
+margin: 60px 60px;
+background-color:#F3F7F6;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+height: 600px;
+}
+
+hr{
+  width: 75%;
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+h1{
+  margin-left: 200px; /* Adjust margin to move the h1 to the right */
+    font-size: 40px; /* Increase the font size of the h1 */
+	color:#548776;
+  margin-top:100px ;
+}
+
+#Main-Category li,
+#Sweet-Category li,
+#Drinks-Category li {
+  border: solid #8dbe97 2px;
+  width : 300px;
+  height:75px ;
+  padding: 50px 50px;
+  background-color:#f1eded;
+  border-radius:30px;
+  list-style: none;
+ position:relative;
+ top: 40px;
+right: -70px;
+ box-shadow: 5px 5px 5px rgb(121, 121, 121);
+ 
+}
+
+
+li:hover{
+  cursor: pointer;
+transform: scale(1.01);
+
+}
+
+
+
+li img{
+  position: relative; 
+left:250px;
+bottom: 240px;
+
+border-radius: 50%;
+}
+
+pre{
+  position: relative; 
+left:170px;
+bottom: 235px;
+padding: 13px 1px;
+}
+
+li p{
+  position: relative; 
+right:30px;
+bottom: 20px;
+font-size: 15px;
+width:300px;
+padding: 1px 15px;
+color: #494949;
+}
+h4{
+  font-size: 35px;
+  color: #000000;
+  text-align: center;
+}
+
+li h3{
+  font-size: 18px;
+position: relative;
+left: auto; 
+top:auto;
+right:30px;
+bottom: 20px;
+color: rgb(0, 0, 0);
+}
+
+#ResLogo{
+position: relative;
+left: 500px;
+}
+
+.navigationBar ol{
+list-style: none;
+ display: flex;
+ justify-content: space-evenly;
+ width:30%;
+ padding: 0;
+ margin: 0;
+ position: relative;
+ left:5%;
+  font-size: 20px;
+  margin-top: 10px;
+position: absolute;
+    left: 200px;
+}
+
+a{
+  color: black;
+}
+
+.container{
+  height: 400px;
+  width: 95%;
+  background-color: #ffffff;
+ background-image:url(photo/back8.jpg);
+background-repeat: no-repeat;
+background-position: 300px -10px;
+
+}
+.container p{
+  color: #707070;
+  width: 50%;
+  position:relative;
+  left: 170px;
+  top: 300px;
+}
+
+.button,.toCart{
+  padding: 15px 15px; 
+    margin-left: 250px; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid #548776; 
+    border-radius: 40px; 
+    background-color: #548776;
+    color: white; 
+    font-size: 15px; 
+    display: inline-block; 
+    align-items: center;
+
+}
+.toCart{
+position: relative; 
+left: 550px ;
+margin:30px;
+border-radius:30px; 
+
+}
+ button:hover{
+  background-color: white; 
+    color: black; 
+
+}
+
+.q-button{
+  position: relative;
+  right: 30px;
+  bottom: 190px;
+  background-color: #ebebeb8c;
+
+}
+.q-button button:hover {
+cursor: pointer;
+color: #000000;
+background-color: #ffffff;
+border-color: #548776;
+}
+
+.C-form{
+  position: relative;
+ left:5%;
+}
+.selectMeal{
+  position: relative;
+  right: 40px;
+  bottom: 150px;
+}
+.selectMeal input[type="checkbox"] {
+ display: none; 
+ position: relative;
+ width: 10px;
+ 
+ }
+
+       
+.selectMeal label {
+display: inline-block;
+padding: 6px 7px;
+background-color: #f0f0f0;
+border: 2px solid #ccc;
+border-radius: 20px;
+ cursor: pointer;
+ color: #000000;
+}
+
+      
+.selectMeal input[type="checkbox"]:checked + label{
+ background-color:#D2EFE3;
+color: #000000;
+border-color:#548776;
+}
+
+
+.Cat-form label {
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+ left: 230px;
+ bottom: 70px;
+  
+}
+
+
+.Cat-form select#category ,#sortOptions{
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-size: 16px;
+  position: relative;
+ left: 230px;
+ bottom: 70px;
+}
+#sortOptions{
+position: relative;
+ left: 1100px;
+ top: 90px;
+ width: 130px;
+ height: 40px;
+
+}
+.sorting label{
+  position: relative;
+ left: 1100px;
+ top: 90px;
+
+}
+
+.Cat-form optgroup {
+  font-weight: bold;
+}
+
+
+			  .dark-mode-button {
+    padding: 12px 40px; /* Adjust padding to change button size */
+    border: 2px solid #548776; /* Set border color and thickness */
+    border-radius: 40px; /* Add curved borders */
+    background-color: #548776;
+    color: white; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;   /* Cursor changes to pointer when hovered */
+	    margin-left: 78%; /* Add margin to the left to move the button right */
+		 position: relative; /* Use relative positioning */
+    bottom: 12px; /* Move up by reducing the bottom margin */
+
+}
+
+/* Style for the button when hovering over it */
+.dark-mode-button:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+			  
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+ 
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+		.dark-mode .breadcrumbs a {
+    color: #ffffff; /* Set breadcrumb links to white in dark mode */
+}
+
+        .dark-mode .contact-item a{
+            color: white;
+        }
+.dark-mode #mealLabel {
+    color: black; /* Ensures the text color remains black in dark mode */
+}
+
+        .dark-mode h1{
+            color: white;
+        }
+
+</style>
+<!-- end style-->
+  <body   >
+  
+    <header> 
+        <div id="logo">
+            <img src="photo/logo.png" alt="Logo">
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                  <li><a href="../home/index.html" class="nav-link">Home</a></li>
+                  <li> <a href="../owner/Owner.html" class="nav-link">Owner</a></li>
+                  <li> <a href="../customer/customer.html" class="nav-link">Customer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+ 
+<main> 
+
+	 <div>
+<button onclick="darkMode()" id="change" class="dark-mode-button">Dark Mode</button>
+    </div>
+
+    <h1> Our Menu </h1> <hr>
+
+<section class="container" >
+
+<nav class="navigationBar" > 
+<ol>
+<li><a href="../home/index.html">Home Page &gt;  </a></li>
+<li><a href="../customer/customer.html">Customer &gt; </a> </li>
+<li><a href="../resturantpage/ResturantPage.html"> restaurant page</a></li>
+</ol>
+</nav>
+
+<p>A great day begins with a smile. Start your day with us at Piatto ...</p>
+<img id="ResLogo" src="photo/Piatto-Logo.svg" alt="Restaurant Logo" height="200" width="200">
+<form class="Cat-form">
+  <label for="category"id="mealLabel">what do you want to eat?</label>
+<select name ="meal_category" id="category" >
+<optgroup label="Main Dishes">
+  <option>Avocado toast</option>
+  <option>cheese Pizza</option>
+  <option>Grilled Chicken</option>
+  <option>Tuscan Vegetable pizza</option>
+  <option>Tomato Salad</option>
+  <option>Tomato Soup</option>
+</optgroup>
+<optgroup label="Dessert">
+  <option>Red Velvet Cake </option>
+  <option>Cream caramel </option>
+  <option>French Toast </option>
+  <option>Pancakes</option>
+  <option>Cream Puff</option>
+  <option>Lotus Tiramisu</option>
+</optgroup>
+<optgroup label="Drinks">
+  <option>Pomegranate juice</option>
+  <option>Passion Fruit juice</option>
+  <option>Strawberry juice</option>
+  <option>Italian Soda</option>
+</optgroup>
+</select>
+</form>
+</section>
+
+<div class="sorting">
+<label for="sortOptions">Sort :</label>
+<select id="sortOptions" onchange="sortSections()">
+  <option value="name-asc">Name (A-Z)</option>
+  <option value="name-desc">Name (Z-A)</option>
+</select>
+</div>
+<hr>
+
+<div class="C-button">
+  <a href="#StartMainDish"><button class="button" >Main Dishes</button></a> 
+  <a href="#StartDessert"><button class="button" >Dessert</button></a>
+  <a href="#StartDrinks"><button class="button">Drinks</button></a>
+</div>
+
+<!-- beginning of menu -->
+<!-- MAIN DISH CATEGORY -->
+
+<section class ="meals_category">
+<h4 id ="StartMainDish">Main Dishes</h4>
+
+<ul id="Main-Category" >
+<li class="section" > <h3>Avocado toast</h3> 
+<p> Toasted slices of Ciabatta topped with fresh tomatoes,garlic, extra virgin olive oil</p>
+<div class="selectMeal"> <input id="Avocado toast" type ="checkbox" onchange="updateCart(this.id, this.checked)" ><label for="Avocado toast">Select</label> </div>
+
+<img src="photo/Avocado Bruschetta.jpg" alt="Avocado toast " height="130" width="130">
+<div class="q-button">
+<button onclick="modifyQuantity('Avocado toast', false)"  >-</button>
+<span id="quantity_Avocado toast">0</span> 
+<button onclick="modifyQuantity('Avocado toast', true)" >+</button> 
+</div>
+<pre> 300 cal   &#124;  <span class="Price" >45 sr</span> </pre> 
+</li>
+
+<li class="section" > <h3>cheese Pizza</h3> 
+  <p> Our homemade pizza sauce, topped with chunks of cheese</p>
+  <div class="selectMeal"> <input id="cheese Pizza" type ="checkbox"  onchange="updateCart(this.id, this.checked)"><label for="cheese Pizza">Select </label> </div>
+<img src="photo/Burrata-Pizza.jpg" alt="cheese Pizza " height="130" width="130">
+<div class="q-button">
+<button onclick="modifyQuantity('cheese Pizza', false)" >-</button>
+<span id="quantity_cheese Pizza">0</span>
+<button onclick="modifyQuantity('cheese Pizza', true)" >+</button>
+</div>
+<pre> 560 cal   &#124;   90 sr</pre>
+</li>
+
+
+<li class="section" > <h3>Grilled Chicken</h3> 
+  <p> Grilled Chicken topped with tomatoes and garlic with fresh basil </p>
+  <div class="selectMeal"> <input id="Grilled Chicken" type ="checkbox" onchange="updateCart(this.id, this.checked)"><label for="Grilled Chicken">Select </label> </div>
+
+  <img src="photo/Grilled-Chicken.jpg" alt="Grilled Chicken " height="130" width="130">
+<div class="q-button">
+<button onclick="modifyQuantity('Grilled Chicken', false)" >-</button>
+<span id="quantity_Grilled Chicken">0</span>
+<button onclick="modifyQuantity('Grilled Chicken', true)" >+</button>
+  </div>
+<pre> 757 cal   &#124;   92 sr</pre>
+</li>
+
+<li class="section" > <h3>Tuscan Vegetable pizza</h3> 
+  <p> pesto sauce, peppers ,mushrooms, mozzarella  and goat cheese</p>
+  <div class="selectMeal"> <input id="Tuscan Vegetable" type ="checkbox" onchange="updateCart(this.id, this.checked)"><label for="Tuscan Vegetable">Select</label> </div>
+
+  <img src="photo/Tuscan-Vegetable-Pizza.jpg" alt="Tuscan Vegetable pizza" height="130" width="130">
+  <div class="q-button">
+<button onclick="modifyQuantity('Tuscan Vegetable', false)" >-</button>
+<span id="quantity_Tuscan Vegetable">0</span>
+<button onclick="modifyQuantity('Tuscan Vegetable', true)" >+</button>
+  </div>
+<pre> 757 cal   &#124;   68 sr</pre>
+</li>
+</ul>
+
+</section> 
+
+ 
+<!--SWEET CATEGORY --> <hr>
+<section class ="meal_category">
+  <h4 id="StartDessert">Dessert</h4>
+  <ul id="Sweet-Category" >
+  
+  <li class="section" > <h3>Red Velvet Cake </h3> 
+     <p> layers of Red Velvet Cake with cream cheese icing </p>
+     <div class="selectMeal"> <input id="Red Velvet Cake" type ="checkbox"  onchange="updateCart(this.id, this.checked)" ><label for="Red Velvet Cake">Select </label> </div>
+  <img src="photo/Red-Velvet-Cake.jpg" alt=" Red Velvet Cake " height="130" width="130">
+  <div class="q-button">
+    <button onclick="modifyQuantity('Red Velvet Cake', false)" >-</button>
+    <span id="quantity_Red Velvet Cake">0</span>
+    <button onclick="modifyQuantity('Red Velvet Cake', true )" >+</button>
+  </div>
+<pre> 456 cal   &#124;   36 sr</pre>
+  </li>
+  
+  <li class="section"> <h3>Cream caramel</h3> 
+    <p> creamy decadence of baked vanilla custard, infused with golden blanket of caramelized sugar </p>
+    <div class="selectMeal"> <input type ="checkbox" id="Cream caramel" onchange="updateCart(this.id, this.checked)"><label for="Cream caramel">Select </label> </div>
+  <img src="photo/Creme-Brulee.jpg" alt="Cream caramel " height="130" width="130">
+  <div class="q-button">
+    <button onclick="modifyQuantity('Cream caramel', false)" >-</button>
+    <span id="quantity_Cream caramel">0</span>
+    <button onclick="modifyQuantity('Cream caramel', true)" >+</button>
+  </div>
+<pre> 173 cal   &#124;   42 sr</pre>
+  </li>
+  
+  <li class="section"> <h3>French Toast</h3> 
+    <p> buttery brioche toast with strawberry and italian cream </p>
+    <div class="selectMeal"> <input id="French Toast" type ="checkbox" onchange="updateCart(this.id, this.checked)"><label for="French Toast">Select </label> </div> 
+  <img src="photo/French-Toast.jpg" alt="French Toast " height="130" width="130">
+  <div class="q-button">
+    <button onclick="modifyQuantity('French Toast', false)" >-</button>
+    <span id="quantity_French Toast">0</span>
+    <button onclick="modifyQuantity('French Toast', true)" >+</button>
+  </div>
+ <pre> 300 cal   &#124;   42 sr</pre>
+  </li>
+  
+  <li class="section" > <h3>Pancakes</h3> 
+    <p> served with chantilly cream and strawberries,syrup</p>
+    <div class="selectMeal"> <input id="Pancakes" type ="checkbox" onchange="updateCart(this.id, this.checked)"><label for="Pancakes">Select </label> </div> 
+  <img src="photo/Pancakes-1.jpg" alt="Pancakes" height="130" width="130">
+  <div class="q-button">
+    <button onclick="modifyQuantity('Pancakes', false)" >-</button>
+    <span id="quantity_Pancakes">0</span>
+    <button onclick="modifyQuantity('Pancakes', true)" >+</button>
+  </div>
+  <pre> 345 cal   &#124;   42 sr</pre
+  </li>
+
+  </ul>
+  </section> 
+
+
+  
+  <!-- DRINKS CATEGORY --><hr>
+
+  <section class ="meal_category">
+    <h4 id="StartDrinks">Drinks</h4>
+    <ul id="Drinks-Category">
+    
+    <li class="section"> <h3>Pomegranate juice </h3> 
+       <p> Pomegranate and garnished with fresh Pomegranate seeds </p>
+       <div class="selectMeal"> <input id="Pomegranate juice" type ="checkbox" onchange="updateCart(this.id, this.checked)"><label for="Pomegranate juice">Select </label> </div> 
+    <img src="photo/Pomegranate-juice.jpg" alt=" Pomegranate juice " height="130" width="130">
+    <div class="q-button">
+    <button onclick="modifyQuantity('Pomegranate juice', false)" >-</button>
+    <span id="quantity_Pomegranate juice">0</span>
+    <button onclick="modifyQuantity('Pomegranate juice', true)" >+</button>
+    </div>
+    <pre> 200 cal   &#124;   26 sr</pre>
+    </li>
+    
+    <li class="section" > <h3>Passion Fruit juice</h3> 
+      <p> refreshing combination of citrus juice and Passion fruit </p>
+      <div class="selectMeal"> <input id="Passion Fruit juice" type ="checkbox" onchange="updateCart(this.id, this.checked)"><label for="Passion Fruit juice">Select </label> </div> 
+    <img src="photo/Passion-juice.jpg" alt="Passion Fruit juice " height="130" width="130">
+    <div class="q-button">
+    <button onclick="modifyQuantity('Passion Fruit juice', false)">-</button>
+    <span id="quantity_Passion Fruit juice">0</span>
+    <button onclick="modifyQuantity('Passion Fruit juice', true)" >+</button>
+    </div>
+    <pre> 160 cal   &#124;   26 sr</pre>
+    </li>
+    
+    <li class="section" > <h3>Strawberry juice </h3> 
+      <p>fresh mint with lime and shaken with real strawberries and topped with sparkling water </p>
+      <div class="selectMeal"> <input id="Strawberry juice" type ="checkbox" onchange="updateCart(this.id, this.checked)"><label for="Strawberry juice">Select </label> </div> 
+    <img src="photo/Strawberry-juice-3.jpg" alt="Strawberry juice " height="130" width="130">
+    <div class="q-button">
+    <button onclick="modifyQuantity('Strawberry juice', false)" >-</button>
+    <span id="quantity_Strawberry juice">0</span>
+    <button onclick="modifyQuantity('Strawberry juice', true)">+</button>
+    </div>
+    <pre> 130 cal   &#124;   26 sr</pre>
+    </li>
+    
+    <li class="section"> <h3>Italian Soda</h3> 
+      <p> A delicious combination of fresh citrus juices topped with sparkling water</p>
+      <div class="selectMeal"> <input id="Italian Soda" type ="checkbox" onchange="updateCart(this.id, this.checked)"><label for="Italian Soda">Select </label> </div> 
+    <img src="photo/Italian-Soda-3.jpg" alt="Italian Soda" height="130" width="130">
+    <div class="q-button">
+      <button onclick="modifyQuantity('Italian Soda', false)" >-</button>
+      <span id="quantity_Italian Soda">0</span>
+      <button onclick="modifyQuantity('Italian Soda', true)" >+</button>
+    </div>
+    <pre> 150 cal   &#124;   30 sr</pre>
+    </li>
+    </ul>
+    </section> 
+  
+<!-- end of menu -->
+
+<a href ="../cart/CartPage.html" > <button class="toCart" onclick="saveCartAndRedirect()" >View Cart </button></a>
+
+
+
+<div class="AccesKey"> 
+  <a href="../home/index.html" accesskey="H"></a>
+  <a href="../customer/customer.html" accesskey="C"></a>
+  <a href="../owner/Owner.html" accesskey="N"></a>
+</div>
+
+
+</main>
+
+
+    <footer>
+        <div class="footer-left">
+            <img src="photo/logo.png" alt="Logo">
+            <p>&copy; 2024 swiftbite. All rights reserved.</p>
+        </div>
+        <div class="footer-middle">
+            <div class="vertical-line">
+                <h3>Get in touch</h3>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="photo/phone-icon.png" alt="Phone">
+                    <p>+966123456789</p>
+                </div>
+                <div class="contact-item">
+                    <img src="photo/email-icon.png" alt="Email">
+<p><a href="mailto:swiftbite@gmail.com">swiftbite@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="vertical-line">
+                <h3>About Us</h3>
+            </div>
+            <p>We simplify your dining experience. Explore local restaurants effortlessly, Join us and redefine your culinary journey.</p>
+            <div class="social-icons">
+                <img src="photo/facebook-icon.png" alt="Facebook">
+                <img src="photo/twitter-icon.png" alt="Twitter">
+                <img src="photo/instagram-icon.png" alt="Instagram">
+                <img src="photo/linkedin-icon.png" alt="LinkedIn">
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.JS"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Owner Page</title>
+	    <link rel="stylesheet" href="../header-footer.css">
+		    <link rel="stylesheet" href="owner.css">
+			
+			  <style>
+			  .dark-mode-button {
+    padding: 12px 40px; /* Adjust padding to change button size */
+    border: 2px solid #548776; /* Set border color and thickness */
+    border-radius: 40px; /* Add curved borders */
+    background-color: #548776;
+    color: white; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;   /* Cursor changes to pointer when hovered */
+	    margin-left: 78%; /* Add margin to the left to move the button right */
+		 position: relative; /* Use relative positioning */
+    bottom: 12px; /* Move up by reducing the bottom margin */
+
+}
+
+/* Style for the button when hovering over it */
+.dark-mode-button:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+			  
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+ 
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+		.dark-mode .breadcrumbs a {
+    color: #ffffff; /* Set breadcrumb links to white in dark mode */
+}
+
+        .dark-mode .contact-item a{
+            color: white;
+        }
+		.dark-mode #culinaryHeader {
+    color: black; /* Ensures text color stays black in dark mode */
+}
+		
+    </style>
+
+</head>
+
+<body>
+
+    <header> 
+        <div id="logo">
+            <img src="photo/logo.png" alt="Logo">
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="../home/index.html" class="nav-link">Home</a></li>
+                    <li> <a href="../owner/Owner.html" class="nav-link">Owner</a></li>
+                    <li> <a href="../customer/customer.html" class="nav-link">Customer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main>
+
+	 <div>
+<button onclick="darkMode()" id="change" class="dark-mode-button">Dark Mode</button>
+    </div>
+
+		<div class="page-header">
+        <h1>Your Masterpiece ! </h1>
+        <hr class="line">
+        <div class="breadcrumbs">
+            <a href="../home/index.html">Home page</a> &gt; <a href="../owner/Owner.html">Owner</a>  
+        </div>
+        </div>
+<section class="option">
+    <div class="Form">
+      <h2 id="culinaryHeader"> Shape Your Culinary </h2>
+     <span>
+        <a href="../offers/offers.html"><button> Edit Offers</button></a>
+       <a href="../cuisine/cuisine.html"> <button>Add New Cuisine</button></a>
+     </span>
+    </div>
+</section>  
+ 
+
+
+<div id="mealList" class="container">
+    
+<div class="Card">
+    <img src="photo/Burger-Piatto-3.jpg" alt="BEEF BURGER ">
+<div class="intro">
+            <h2>BEEF BURGER</h2>
+            <p>Beef burger with mushrooms, caramelized onions, melted Fontina cheese.</p>
+            <p> SAR 90.00 </p><p>990 cal</p>
+</div>
+</div>
+
+<div class="Card">
+    <img src="photo/Fresh-Fruit-Salad-Bowl.jpg" alt="FRUIT SALAD ">
+<div class="intro">
+            <h2>FRUIT SALAD</h2>
+            <p>fresh fruit served with yoghurt and honey .</p>
+            <p> SAR 55.00 </p><p>150 cal</p>
+</div>
+</div>
+
+<div class="Card">
+    <img src="photo/Pancakes-1.jpg" alt="PANCAKES ">
+<div class="intro">
+            <h2>PANCAKES</h2>
+            <p>served with chantilly cream and strawberries,syrup.</p>
+            <p> SAR 54.00 </p><p>450 cal</p>
+</div>
+</div>
+
+<div class="Card">
+<img src="photo/dish1.png" alt="Mozzarella & Avocado toast">
+ <div class="intro">
+<h2>Mozzarella & Avocado toast</h2>
+<p>Toasted slices of Ciabatta topped with fresh tomatoes, garlic, extra virgin olive oil, and fresh basil.</p>
+<p> SAR 44.00 </p><p>270 cal</p>
+ </div>
+</div>
+
+<div class="Card">
+<img src="photo/dish5.png" alt="CRISPY SHRIMP">
+<div class="intro">
+    <h2>CRISPY SHRIMP</h2>
+    <p>Crispy golden fried shrimps with fresh lemon. Perfect For Sharing!</p>
+    <p> SAR 69.00 </p><p>319 cal</p>
+</div>
+</div>
+
+<div class="Card">
+<img src="photo/dish3.png" alt="TOMATO SALAD ">
+<div class="intro">
+        <h2>TOMATO SALAD</h2>
+        <p>Fresh cheese with tomato infused with roasted garlic and flaked salt.</p>
+        <p> SAR 90.00 </p><p>1300 cal</p>
+</div>
+</div>
+
+
+<div class="Card">
+    <img src="photo/dish4.png" alt="Lasagna Bolognese ">
+    <div class="intro">
+            <h2>Lasagna Bolognese</h2>
+            <p>Flat pasta layers stuffed with minced meat sauce and mozzarella cheese in clay pot.</p>
+            <p> SAR 69.00 </p><p>850 cal</p>
+    </div>
+    </div>
+
+
+
+    <div class="Card">
+        <img src="photo/dish2.png" alt="Musakhan Rolls ">
+        <div class="intro">
+                <h2>Musakhan Rolls</h2>
+                <p>Chicken, olive oil, pine nuts and Summak in shark bread rolls.</p>
+                <p> SAR 35.00   500 cal</p><p>500 cal</p>
+        </div>
+        </div>
+
+
+</div>
+
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Function to display meals on the dashboard
+        function displayMeals() {
+            const mealList = document.getElementById('mealList');
+            mealList.innerHTML = ''; // Clear the existing content
+            
+            // Retrieve meals from local storage
+            const meals = JSON.parse(localStorage.getItem('meals')) || [];
+            
+            // Loop through each meal and create HTML elements to display them
+            meals.forEach(function(meal) {
+                const card = document.createElement('div');
+                card.classList.add('Card');
+
+                const img = document.createElement('img');
+                img.src = meal.image;
+                img.alt = meal.mealName; 
+
+                const intro = document.createElement('div');
+                intro.classList.add('intro');
+
+                const mealName = document.createElement('h2');
+                mealName.textContent = meal.mealName;
+
+                const description = document.createElement('p');
+                description.textContent = meal.description;
+
+                const priceCalories = document.createElement('p');
+                priceCalories.innerHTML = `Price: ${meal.price} SAR<br>Calories: ${meal.calories} cal`;
+
+                intro.appendChild(mealName);
+                intro.appendChild(description);
+                intro.appendChild(priceCalories);
+
+                card.appendChild(img);
+                card.appendChild(intro);
+
+                mealList.appendChild(card);
+            });
+        }
+
+        // Call the displayMeals function when the DOM content is loaded
+        displayMeals();
+    });
+   /* // Function to delete a meal from local storage
+function deleteMeal(mealName) {
+    // Retrieve meals from local storage
+    let meals = JSON.parse(localStorage.getItem('meals')) || [];
+    
+    // Find the index of the meal to be deleted
+    const index = meals.findIndex(meal => meal.mealName === mealName);
+    
+    if (index !== -1) {
+        // Remove the meal from the array
+        meals.splice(index, 1);
+        
+        // Update local storage with the modified array
+        localStorage.setItem('meals', JSON.stringify(meals));
+        
+        // Optionally, you can also update the display after deleting the meal
+        displayMeals();
+        
+        // Optionally, provide feedback to the user
+        alert(`Meal '${mealName}' deleted successfully.`);
+    } else {
+        // Meal not found
+        alert(`Meal '${mealName}' not found.`);
+    }
+}
+deleteMeal('hhhh');*/
+
+    
+
+/////////////////////////////////////////////////////////////////////////
+  /*  if (typeof(Storage) !== "undefined") {
+  // Retrieve the restaurant meals from local storage
+  var storedMeals = localStorage.getItem("mealList");
+
+  // Check if there are any meals stored
+  if (storedMeals !== null) {
+    // Parse the stored meals as JSON
+    var meals = JSON.parse(storedMeals);
+
+    // Display the meals on the dashboard
+    meals.forEach(function(meal) {
+      // Display the meal details on the dashboard (e.g., append them to a list or table)
+      // Example:
+      var mealElement = document.createElement("li");
+      mealElement.textContent = img+ " - " + mealName + " - " + priceCalories + " - " + description;
+      document.getElementById("mealList").appendChild(mealElement);
+    });
+  }
+} else {
+  // Local storage is not supported
+  console.log("Local storage is not supported by your browser.");
+}
+    ///////////////////////////////////////////////////////// */
+	
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    
+</script>
+
+
+<div class="AccesKey"> 
+    <a href="../home/index.html" accesskey="H"></a>
+    <a href="../customer/customer.html" accesskey="C"></a>
+    <a href="../owner/Owner.html" accesskey="N"></a>
+</div>
+
+</main>
+
+    <footer>
+        <div class="footer-left">
+            <img src="photo/logo.png" alt="Logo">
+            <p>&copy; 2024 swiftbite. All rights reserved.</p>
+        </div>
+        <div class="footer-middle">
+            <div class="vertical-line">
+                <h3>Get in touch</h3>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="photo/phone-icon.png" alt="Phone">
+                    <p>+966123456789</p>
+                </div>
+                <div class="contact-item">
+                    <img src="photo/email-icon.png" alt="Email">
+<p><a href="mailto:swiftbite@gmail.com">swiftbite@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="vertical-line">
+                <h3>About Us</h3>
+            </div>
+            <p>We simplify your dining experience. Explore local restaurants effortlessly, Join us and redefine your culinary journey.</p>
+            <div class="social-icons">
+                <img src="photo/facebook-icon.png" alt="Facebook">
+                <img src="photo/twitter-icon.png" alt="Twitter">
+                <img src="photo/instagram-icon.png" alt="Instagram">
+                <img src="photo/linkedin-icon.png" alt="LinkedIn">
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links {
+            display: flex; /* Make the navigation links flexbox */
+            flex-direction: row;
+            gap: 20px; /* Add gap between navigation links */
+        }
+
+        .nav-link {
+            text-decoration: none; /* Remove default underline */
+            color: #333; /* Set text color */
+            font-weight: bold; /* Make text bold */
+            border: 1px solid transparent; /* Add transparent border */
+			border-radius:15px;
+            padding: 40px 10px; /* Add padding to the links */
+            transition: border-color 0.3s; /* Smooth transition for border color */
+        }
+
+        .nav-link:hover,
+        .nav-links:hover .nav-link {
+            border-color: #568676; /* Change border color on hover */
+						background-color:#568676;
+
+        }
+
+        .nav-link:focus {
+            outline: none; /* Remove default focus outline */
+            border-color: #568676; /* Change border color when link is focused */
+			background-color:#568676;
+        }
+body{
+	margin-top: 20px;
+	    overflow-x: hidden;
+
+	
+}
+
+.nav-container {
+    position: relative; /* Ensure relative positioning */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    border: 1px solid #507f6f;
+    border-radius: 12px;
+    padding: 15px; /* Add padding to create space between items and border */
+	    right: 60px; 
+	font-style: bold;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 300px; /* Adjust spacing between navigation items */
+}
+nav ul li:last-child {
+    margin-right: 50px; /* Remove margin from last item */
+}
+
+#logo img {
+    position: absolute; /* Position the logo absolutely */
+    width: 200px;
+    height: 180px;
+    left: 1%; /* Move the logo 25% from the left edge of the page */
+    
+    transform: translateY(-50%); /* Adjust for centering */
+    margin-right: 10px;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #548776;
+    border-left: 1px solid #548776;
+    border-right: 1px solid #548776;
+    border-bottom: none;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+
+.footer-left img {
+    width: 100px; /* Adjust image size as needed */
+}
+
+.footer-left p {
+    font-size: 12px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+}
+
+.footer-middle, .footer-right {
+    text-align: center;
+}
+
+.social-icons, .contact-icons {
+    margin-top: 10px;
+}
+
+.footer-right img, .contact-icons img {
+    width: 30px; /* Adjust image size as needed */
+}
+
+.footer-right p {
+    margin-top: 10px;
+}
+.footer-left {
+    margin-right: 20px; /* Adjust margin to move the logo slightly to the right */
+}
+
+.vertical-line {
+    border-left: 1px solid #548776; /* Add a vertical line */
+    height: 20px; /* Adjust height as needed */
+}
+
+.vertical-line:last-child {
+    display: none; /* Hide the vertical line after the last section */
+}
+
+.footer-left img {
+    width: 170px; /* Adjust image size as needed */
+	
+}
+.footer-left  {
+	margin-left: 70px;
+}
+
+
+.footer-left p {
+    font-size: 12px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+}
+
+.footer-middle, .footer-right {
+    text-align: left;
+	flex: 0 0 auto; /* Ensure the footer right section doesn't grow */
+}
+.social-icons {
+    margin-top: 10px;
+    position: relative; /* Set the position to relative */
+    left: -40px; /* Adjust the left position as needed */
+}
+.footer-middle h3,
+.footer-right h3 {
+    font-size: 23px; /* Ensure that font-size is applied correctly */
+	margin-left:20px;
+}
+
+.social-icons, .contact-icons {
+    margin-top: 10px;
+}
+
+.footer-right img, .contact-icons img {
+    width: 60px; /* Adjust image size as needed */
+}
+
+.footer-right p {
+	 margin-top: 10px;
+    width: 200px; /* Set a specific width for the About Us description */
+    
+}
+.vertical-line {
+    border-left: 1px solid #548776;
+    height: 20px;
+    margin: 0 20px;
+}
+
+.footer-middle {
+    text-align: center;
+	margin-top:-50px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

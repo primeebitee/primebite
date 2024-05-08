@@ -1,0 +1,463 @@
+
+
+
+/* styles.css */
+.page-header {
+
+    margin-top: 100px;
+}
+.page-header h1 {
+    margin-left: 200px; /* Adjust margin to move the h1 to the right */
+    font-size: 40px; /* Increase the font size of the h1 */
+	color:#548776;
+	    padding-bottom: 5px; /* Add padding to increase space between breadcrumbs and content */
+
+}
+
+.line {
+    width: 75%;
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px; /* Decrease the margin-bottom to reduce space between the line and breadcrumbs */
+}
+
+
+.breadcrumbs {
+    font-size: 20px !important;
+    margin-top: 10px;
+    margin-left: 200px; /* Adjust the margin-left to create space and keep the breadcrumbs in the flow */
+}
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	    margin-top: 50px; /* Increase space between breadcrumbs and offers */
+
+  }
+  .offer {
+	  
+	  
+height:400px;
+    margin: 20px; /* Add space around each offer */
+    width: calc(30% - 40px); /* Adjusted width to accommodate margins */
+    border: 2px solid #548776;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px;
+	    text-align: center; /* Center-align content */
+
+  }
+  
+  .offer h2 {
+    font-size: 25px; /* Increase header font size */
+    margin-bottom: 5px; /* Add space below the header */
+	    margin-top: 0; /* Remove margin from the top */
+
+}
+
+  .offer img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    height: 260px;
+
+  }
+  .offer-description {
+    text-align: center;
+    margin-top: 10px;
+	
+    font-size: 18px; /* Increase description font size */
+    margin-bottom: 10px; /* Add space below the description */
+
+  }
+  
+  
+  .delete-all-btn {
+	  padding: 10px 40px;
+	  font-size:24px;
+	  color: white;
+	      border: 2px solid #548776;
+		  background-color:#548776;
+border-radius:30px;
+    display: block;
+    margin: 30px auto;
+  }
+  
+.delete-all-btn:hover {
+    background-color: white;
+    color: #548776;
+    border: 1px solid #548776;
+}
+
+  
+  .offer input[type="checkbox"] {
+    display: block;
+    width: 30px; /* Increase checkbox width */
+    height: 30px; /* Increase checkbox height */
+    margin-top: 20px; /* Move the checkbox down */
+    margin-left: 324px; /* Move the checkbox to the right */
+}
+
+
+.offer-info-container {
+	
+    border: 2px solid #548776;
+	border-radius:20px;
+    margin: 20px auto;
+    padding: 10px; /* Adjust padding as needed */
+    width: 1200px; /* Adjust width as needed */
+	height:950px;
+}
+
+.offer-info-container h2 {
+    margin-bottom: 20px; /* Add space below the h2 */
+    text-align: center; /* Center align h2 */
+    padding-top: 20px; /* Add padding on top to separate from the line */
+    height: 100px; /* Increase height */
+    font-size: 30px; /* Increase font size */
+    color: #548776; /* Change text color */
+}
+.offer-info-container .line-container {
+    width: 35%;
+	    position: relative;
+
+    top: -80px; /* Adjust the top position to move the line up */
+	    left: 383px; /* Adjust the left position to move the line to the right */
+
+}
+
+
+.offer-info.upload-label label {
+    margin-top: 40px; /* Adjust the margin-top as needed to move the label down */
+    position: relative; /* Ensure the position is relative */
+}
+
+
+
+
+
+
+.offer-info-container .line {
+	    color: #548776; /* Change text color */
+
+    border: none;
+    height: 2px;
+}
+
+.input-container input#description {
+    height: 150px; /* Adjust the height as needed */
+}
+
+.offer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.offer-info label {
+    font-size: 35px;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #548776;
+    background-color: #548776;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-right: 320px; /* Adjust the left margin as needed */
+	position: relative;
+    left: 120px;
+	    margin-bottom: 50px; /* Add space below each label */
+
+
+
+}
+
+.input-container input[type="text"] {
+    width: 450px; /* Adjust the width as needed */
+    height: 43px;
+    padding: 10px;
+    border: 1px solid #548776;
+    border-radius: 30px;
+    margin-top: 10px;
+	    margin-bottom: 50px; /* Add space below each label */
+
+
+}
+.picture-container {
+    position: relative; /* Make the container a positioned parent */
+    width: 400px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background-color: #fff; /* Set background color for the picture container */
+    border: 1px solid #548776; /* Add border */
+    overflow: hidden; /* Hide overflow to prevent the input from sticking out */
+    margin-top: -40px; /* Move the container upwards by 20px */
+    margin-left: 30px;; /* Move the container to the right */
+    border-radius: 20px;
+    
+}
+
+
+.picture-container input[type="file"] {
+    position: absolute; /* Position the input absolutely */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Make the input invisible */
+    width: 100%;
+    height: 100%;
+    cursor: pointer; /* Change cursor to pointer when hovering over the input */
+    z-index: 1; /* Ensure the input is above other elements */
+}
+
+.picture-container label {
+    position: absolute; /* Position the label absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; /* Change cursor to pointer when hovering over the label */
+    z-index: 2; /* Ensure the label is above other elements */
+}
+
+.picture-container img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    position: relative;
+  right: 60px;
+  
+}
+
+
+.picture-info {
+	
+    position: absolute;
+    bottom: -1665px; /* Adjust bottom position as needed */
+    right: 840px; /* Adjust left position as needed */
+	    transform: translateX(50%); /* Move it to the right by 50% of its width */
+}
+
+.picture-info img {
+    width: 260px; /* Adjust width as needed */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
+
+
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.buttons button {
+    font-size: 20px;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.buttons button[type="submit"] {
+    background-color: #548776;
+    color: white;
+}
+
+.buttons button[type="submit"]:hover {
+    background-color: white;
+    color: #548776;
+    border: 1px solid #548776;
+}
+
+.buttons button[type="button"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+.buttons button[type="button"]:hover {
+    background-color: white;
+    color: #548776;
+    border: 1px solid #548776;
+}
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #548776;
+    border-left: 1px solid #548776;
+    border-right: 1px solid #548776;
+    border-bottom: none;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+
+.footer-left img {
+    width: 100px; /* Adjust image size as needed */
+}
+
+.footer-left p {
+    font-size: 12px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+}
+
+.footer-middle, .footer-right {
+    text-align: center;
+}
+
+.social-icons, .contact-icons {
+    margin-top: 10px;
+}
+
+.footer-right img, .contact-icons img {
+    width: 30px; /* Adjust image size as needed */
+}
+
+.footer-right p {
+    margin-top: 10px;
+}
+.footer-left {
+    margin-right: 20px; /* Adjust margin to move the logo slightly to the right */
+}
+
+.vertical-line {
+    border-left: 1px solid #548776; /* Add a vertical line */
+    height: 20px; /* Adjust height as needed */
+}
+
+.vertical-line:last-child {
+    display: none; /* Hide the vertical line after the last section */
+}
+
+.footer-left img {
+    width: 170px; /* Adjust image size as needed */
+	
+}
+.footer-left  {
+	margin-left: 70px;
+}
+
+
+.footer-left p {
+    font-size: 12px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+}
+
+.footer-middle, .footer-right {
+    text-align: left;
+	flex: 0 0 auto; /* Ensure the footer right section doesn't grow */
+}
+.social-icons {
+    margin-top: 10px;
+    position: relative; /* Set the position to relative */
+    left: -40px; /* Adjust the left position as needed */
+}
+.footer-middle h3,
+.footer-right h3 {
+    font-size: 23px; /* Ensure that font-size is applied correctly */
+	margin-left:20px;
+}
+
+.social-icons, .contact-icons {
+    margin-top: 10px;
+}
+
+.footer-right img, .contact-icons img {
+    width: 60px; /* Adjust image size as needed */
+}
+
+.footer-right p {
+	 margin-top: 10px;
+    width: 200px; /* Set a specific width for the About Us description */
+    
+}
+.vertical-line {
+    border-left: 1px solid #548776;
+    height: 20px;
+    margin: 0 20px;
+}
+
+.footer-middle {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

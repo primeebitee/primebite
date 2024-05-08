@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Review.css">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>evaluation</title>
+  	    <link rel="stylesheet" href="../header-footer.css">
+        <script src="review.js"></script>
+
+        <style>
+           #mess
+              {
+                 text-align: center;
+                 color: #548776;
+              }
+			  
+			  .dark-mode-button {
+    padding: 12px 40px; /* Adjust padding to change button size */
+    border: 2px solid #548776; /* Set border color and thickness */
+    border-radius: 40px; /* Add curved borders */
+    background-color: #548776;
+    color: white; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;   /* Cursor changes to pointer when hovered */
+	    margin-left: 78%; /* Add margin to the left to move the button right */
+		 position: relative; /* Use relative positioning */
+    bottom: 12px; /* Move up by reducing the bottom margin */
+
+}
+
+/* Style for the button when hovering over it */
+.dark-mode-button:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+			  
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+ 
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+		.dark-mode .breadcrumbs a {
+    color: #ffffff; /* Set breadcrumb links to white in dark mode */
+}
+
+        .dark-mode .contact-item a{
+            color: white;
+        }
+		
+        </style>
+</head>
+
+
+<body>
+
+    <header> 
+        <div id="logo">
+            <img src="photo/logo.png" alt="Logo">
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                  <li><a href="../home/index.html" class="nav-link">Home</a></li>
+                  <li> <a href="../owner/Owner.html" class="nav-link">Owner</a></li>
+                  <li> <a href="../customer/customer.html" class="nav-link">Customer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+
+<main>
+
+	 <div>
+<button onclick="darkMode()" id="change" class="dark-mode-button">Dark Mode</button>
+    </div>
+
+
+		<div class="page-header">
+        <h1>My Review</h1>
+        <hr class="line">
+        <div class="breadcrumbs">
+            <a href="../home/index.html">Home page</a> &gt; <a href="../customer/customer.html">Customer</a> &gt;<a href="../resturantpage/ResturantPage.html">restaurant page</a> &gt; <a href="../cart/CartPage.html">Cart</a> &gt;  <a href="../review/Review.html">evaluation</a> 
+
+
+        </div>
+    </div>
+    <select name="Restaurant" class="option" >
+      <option> Current Order </option>
+      <option> Previous Order </option>
+      <option> Piato </option>
+      <option> Sara's restaurant </option>
+    </select>
+
+
+  
+
+<div class="container">
+
+  <div class="star-rating1">
+    <div class=" star-rating">
+      
+      <input type="radio" id="star5" name="restaurant-rating" value="5">
+      <label for="star5"></label>
+        <input type="radio" id="star4" name="restaurant-rating" value="4">
+        <label for="star4"></label>
+        <input type="radio" id="star3" name="restaurant-rating" value="3">
+        <label for="star3"></label>
+        <input type="radio" id="star2" name="restaurant-rating" value="2">
+        <label for="star2"></label>
+        <input type="radio" id="star1" name="restaurant-rating" value="1">
+        <label for="star1"></label>
+    </div>
+    </div>
+  
+  <h2> Restaurant Review </h2>
+
+
+   <form class="comment">
+      <textarea id="comment1" name="comment" rows="4" cols="40"> Add your comment here &#10245;&#10089;</textarea>
+    </form>
+  </div >
+
+  <div class="container1">
+    
+    <div class="star-rating1">
+      <div class=" star-rating">
+        
+        <input type="radio" id="star6" name="delivery-rating" value="5">
+        <label for="star6"></label>
+        <input type="radio" id="star7" name="delivery-rating" value="4">
+        <label for="star7"></label>
+        <input type="radio" id="star8" name="delivery-rating" value="3">
+        <label for="star8"></label>
+        <input type="radio" id="star9" name="delivery-rating" value="2">
+        <label for="star9"></label>
+        <input type="radio" id="star10" name="delivery-rating" value="1">
+        <label for="star10"></label>
+
+
+      </div>
+      </div>
+
+
+    <h2> Delivery Review</h2>
+  
+
+    <form class="comment"> 
+  <textarea id="comment2" name="comment" rows="4" cols="40">Add your comment here &#10245;&#10089;</textarea>
+  </form> 
+</div> 
+
+
+<a  id="submit" href="../home/index.html"><button>Submit</button></a>
+
+   <script>
+// Get the submit button element
+var submitButton = document.getElementById("submit");
+
+// Add a click event listener to the submit button
+submitButton.addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Get the selected restaurant from the drop-down list
+  var restaurantSelect = document.querySelector('select[name="Restaurant"]');
+  var selectedRestaurant = restaurantSelect.value;
+
+  // Get the selected rating
+  var ratingInputs = document.querySelectorAll('input[name="restaurant-rating"]');
+  var selectedRating = null;
+  for (var i = 0; i < ratingInputs.length; i++) {
+    if (ratingInputs[i].checked) {
+      selectedRating = ratingInputs[i].value;
+      break;
+    }
+  } 
+
+   // Get the selected rating for delivery review
+   var deliveryRatingInputs = document.querySelectorAll('input[name="delivery-rating"]');
+  var selectedDeliveryRating = null;
+  for (var i = 0; i < deliveryRatingInputs.length; i++) {
+    if (deliveryRatingInputs[i].checked) {
+      selectedDeliveryRating = deliveryRatingInputs[i].value;
+      break;
+    }
+  }
+
+  // Validate the form
+  if (selectedRestaurant === "Current Order" || selectedRestaurant === "Previous Order" || selectedRating === null) {
+    alert("Please select a restaurant and provide ratings for both restaurant and delivery.");
+  } else {
+    // Display the success message
+    alert("Thank you for your feedback!\nYour rating for restaurant " + selectedRestaurant + " is " + selectedRating +
+     ".\n" + "Your rating for delivery from " + selectedRestaurant + " is " + selectedDeliveryRating
+     );
+
+    // Redirect to the Home page
+    window.location.href = "../home/index.html";
+  }
+});
+
+
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    
+
+</script>
+    
+<div class="AccesKey"> 
+  <a href="../home/index.html" accesskey="H"></a>
+  <a href="../customer/customer.html" accesskey="C"></a>
+  <a href="../owner/Owner.html" accesskey="N"></a>
+</div>
+  
+
+  </main>
+  
+    <footer>
+        <div class="footer-left">
+            <img src="photo/logo.png" alt="Logo">
+            <p>&copy; 2024 swiftbite. All rights reserved.</p>
+        </div>
+        <div class="footer-middle">
+            <div class="vertical-line">
+                <h3>Get in touch</h3>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="photo/phone-icon.png" alt="Phone">
+                    <p>+966123456789</p>
+                </div>
+                <div class="contact-item">
+                    <img src="photo/email-icon.png" alt="Email">
+<p><a href="mailto:swiftbite@gmail.com">swiftbite@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="vertical-line">
+                <h3>About Us</h3>
+            </div>
+            <p>We simplify your dining experience. Explore local restaurants effortlessly, Join us and redefine your culinary journey.</p>
+            <div class="social-icons">
+                <img src="photo/facebook-icon.png" alt="Facebook">
+                <img src="photo/twitter-icon.png" alt="Twitter">
+                <img src="photo/instagram-icon.png" alt="Instagram">
+                <img src="photo/linkedin-icon.png" alt="LinkedIn">
+            </div>
+        </div>
+    </footer>
+  
+</body>
+</html>
