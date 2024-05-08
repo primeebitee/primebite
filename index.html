@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+              <link rel="stylesheet" href="home.css">
+			  <style>
+			  .dark-mode-button {
+    padding: 12px 40px; /* Adjust padding to change button size */
+    border: 2px solid #548776; /* Set border color and thickness */
+    border-radius: 40px; /* Add curved borders */
+    background-color: #548776;
+    color: white; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;   /* Cursor changes to pointer when hovered */
+	    margin-left: 78%; /* Add margin to the left to move the button right */
+		 position: relative; /* Use relative positioning */
+    bottom: 12px; /* Move up by reducing the bottom margin */
+
+}
+
+/* Style for the button when hovering over it */
+.dark-mode-button:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+			  
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+ 
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+		
+        .dark-mode .offercontainer
+{
+	background-color: #e6e8dd;
+        }
+		
+		
+        .dark-mode .contact-item a{
+            color: white;
+        }
+		
+    </style>
+
+
+</head>
+<body>
+    <header> 
+		
+        <div id="logo">
+            <img src="photo/logo.png" alt="Logo">
+        </div>
+
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="../home/index.html" class="nav-link">Home</a></li>
+                    <li> <a href="../owner/Owner.html" class="nav-link">Owner</a></li>
+                    <li> <a href="../customer/customer.html" class="nav-link">Customer</a></li> 
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+	<main>
+	 <div>
+<button onclick="darkMode()" id="change" class="dark-mode-button">Dark Mode</button>
+    </div>
+    <div class="container">
+
+        <div class="left-panel">
+            <h1>Get Ready to Taste the World</h1>
+            <p>From sizzling street food to gourmet delights, our diverse selection has something to tantalize every taste bud. Don't wait any longer order now and let SwiftBite bring global flavors right to your doorstep!</p>
+            <div class="dialog-box">
+                <input type="text" placeholder="Enter your location">
+               <a href="../customer/customer.html"> <button>Delivery</button></a>
+                <p>or</p>
+                <a href="../customer/customer.html"><button>Pick up</button></a>
+            </div>
+        </div>
+        <div class="right-panel">
+
+            <img src="photo/first.png" alt="Image">
+        </div>
+    </div>
+  
+    <div class="our-vision">
+        <h2>Our Vision</h2>
+    </div>
+
+    <div class="points">
+        <div class="point">
+            <img src="photo/point1.png" alt="Point 1">
+            <h3>Easy To Order</h3>
+            <p>Effortlessly satisfy your cravings with SwiftBite's intuitive ordering system. Just a few clicks and your favorite meal is on its way to you.</p>
+        </div>
+        <div class="point">
+            <img src="photo/point2.png" alt="Point 2">
+            <h3>Fastest Delivery</h3>
+            <p>Hungry for speed? Experience lightning-fast delivery, ensuring your food arrives swiftly so you can enjoy it while it's hot.</p>
+        </div>
+        <div class="point">
+            <img src="photo/point3.png" alt="Point 3">
+            <h3>Best Quality</h3>
+            <p>Indulge in culinary perfection. Partnering with top-rated local restaurants,we bring you the freshest ingredients and the most delicious dishes.</p>
+        </div>
+    </div>
+
+    <div class="offercontainer">
+        <div class="offer">
+            <h2>Special Offers</h2>
+            <div class="offer-set">
+                <!-- Offer 1 -->
+                <div class="offer-item">
+                    <div class="offer-details">
+                        <img src="photo/offer1.png" alt="Offer 1">
+                        <div class="rating">4.3<span class="star">★</span></div>
+                        <div class="restaurant-info">
+                            <h3>A Saffron Thread</h3>
+                            <p>Goat Biryani with Basmati rice and goat steamed with yogurt and aromatic spices.</p>
+                        </div>
+                    </div>
+                    <div class="offer-price">
+                        <p>$13.99</p>
+                        <a href="../cart/CartPage.html"><button>Add to Cart</button></a>
+                    </div>
+                </div>
+                <!-- Offer 2 -->
+                <div class="offer-item">
+                    <div class="offer-details">
+                        <img src="photo/offer2.png" alt="Offer 2">
+                        <div class="rating">3.7<span class="star">★</span></div>
+                        <div class="restaurant-info">
+                            <h3>Joe & The Juice</h3>
+                            <p>Charbroiled chunk of salmon marinated special recipe. Served with salad.</p>
+                        </div>
+                    </div>
+                    <div class="offer-price">
+                        <p>$21.75</p>
+                        <a href="../cart/CartPage.html"><button>Add to Cart</button></a>
+                    </div>
+                </div>
+                <!-- Offer 3 -->
+                <div class="offer-item">
+                    <div class="offer-details">
+                        <img src="photo/offer3.png" alt="Offer 3">
+                        <div class="rating">4.5<span class="star">★</span></div>
+                        <div class="restaurant-info">
+                            <h3>Chop & Go </h3>
+                            <p>grilled sausage with muffins and coleslaw salad.</p>
+                        </div>
+                    </div>
+                    <div class="offer-price">
+                        <p>$11.45</p>
+                        <a href="../cart/CartPage.html"><button>Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offer-set">
+                <!-- Offer 4 -->
+                <div class="offer-item">
+                    <div class="offer-details">
+                        <img src="photo/offer4.png" alt="Offer 4">
+                        <div class="rating">3.5<span class="star">★</span></div>
+                        <div class="restaurant-info">
+                            <h3>Mint Masala</h3>
+                            <p>Lemon flavored rice spiced with cumin, mustard seeds, served with sambar, papad, and achar.</p>
+                        </div>
+                    </div>
+                    <div class="offer-price">
+                        <p>$15.95</p>
+                        <a href="../cart/CartPage.html"><button>Add to Cart</button></a>
+                    </div>
+                </div>
+                <!-- Offer 5 -->
+                <div class="offer-item">
+                    <div class="offer-details">
+                        <img src="photo/offer5.png" alt="Offer 5">
+                        <div class="rating">4.7<span class="star">★</span></div>
+                        <div class="restaurant-info">
+                            <h3>Brooklyn Chop House</h3>
+                            <p>Marinated in soy sauce, garlic, salt and pepper, grilled.</p>
+                        </div>
+                    </div>
+                    <div class="offer-price">
+                        <p>$45</p>
+                        <a href="../cart/CartPage.html"><button>Add to Cart</button></a>
+                    </div>
+                </div>
+                <!-- Offer 6 -->
+                <div class="offer-item">
+                    <div class="offer-details">
+                        <img src="photo/offer6.png" alt="Offer 6">
+                        <div class="rating">4.1<span class="star">★</span></div>
+                        <div class="restaurant-info">
+                            <h3>Steak Philly</h3>
+                            <p>14 oz. Dry-Aged Ribeye (aged 21-35 days), broiled to temperature, finished with Au Jus.</p>
+                        </div>
+                    </div>
+                    <div class="offer-price">
+                        <p>$52.34</p>
+                        <a href="../cart/CartPage.html"><button>Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+    <div id="slider">
+	
+		<h3>Customer Reviews</h3>
+
+	<input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+            <div id="overflow">
+                <div class="inner">
+                    <div class="slide slide_1">
+                        <div class="slide-content">
+                            <div class="img-container">
+                                <img src="photo/customer1.png" alt="Customer 1">
+                            </div>
+                            <div class="review-details">
+                                <p>The fried chicken here is delicious! Crispy on the outside, juicy on the inside. It's perfectly seasoned and cooked to perfection. The portion size is generous too. Definitely coming back for more!</p>
+								<div class="rating-container">
+                                <div class="revrating">
+                                    <span class="stars">★★★★☆</span>
+                                    <p class="customer-name">John Smith</p>
+                                </div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide_2">
+                        <div class="slide-content">
+                            <div class="img-container">
+                                <img src="photo/customer2.png" alt="Customer 2">
+                            </div>
+                            <div class="review-details">
+                                <p>The stew was okay, but nothing extraordinary. The potatoes were a bit overcooked, and I expected more flavor in the broth. However, the peas were fresh and added a nice touch. Overall, it's decent comfort food, but there's room for improvement.</p>
+								<div class="rating-container">
+                                <div class="revrating">
+                                    <span class="stars">★★★☆☆</span>
+                                    <p class="customer-name">Emily Johnson</p>
+                                </div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slide-content">
+                            <div class="img-container">
+                                <img src="photo/customer3.png" alt="Customer 3">
+                            </div>
+                            <div class="review-details">
+                                <p>Wow! These dumplings are amazing! Perfectly steamed with a delicious filling. Each bite is packed with flavor, and the dipping sauce complements them perfectly. I could eat these every day and never get tired of them. Highly recommended!</p>
+								<div class="rating-container">
+                                <div class="revating">
+                                    <span class="stars">★★★★★</span>
+                                    <p class="customer-name">Michael Brown</p>
+                                </div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide_4">
+                        <div class="slide-content">
+                            <div class="img-container">
+                                <img src="photo/customer4.png" alt="Customer 4">
+                            </div>
+                            <div class="review-details">
+                                <p>Unfortunately, I was disappointed with the salad. The vegetables seemed a bit wilted and not very fresh. The dressing lacked flavor, and overall, it was quite bland. I expected more variety and creativity in the ingredients. It's not something I would order again.</p>
+								<div class="rating-container">
+                                <div class="revrating">
+                                    <span class="stars">★★☆☆☆</span>
+                                    <p class="customer-name">Sarah Martinez</p>
+                                </div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+    </div>
+
+    
+    <div class="AccesKey"> 
+        <a href="../home/index.html" accesskey="H"></a>
+        <a href="../customer/customer.html" accesskey="C"></a>
+        <a href="../owner/Owner.html" accesskey="N"></a>
+    </div>
+    
+</main>
+    <footer>
+        <div class="footer-left">
+            <img src="photo/logo.png" alt="Logo">
+            <p>&copy; 2024 swiftbite. All rights reserved.</p>
+        </div>
+        <div class="footer-middle">
+            <div class="vertical-line">
+                <h3>Get in touch</h3>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="photo/phone-icon.png" alt="Phone">
+                    <p>+966123456789</p>
+                </div>
+                <div class="contact-item">
+                    <img src="photo/email-icon.png" alt="Email">
+<p><a href="mailto:swiftbite@gmail.com">swiftbite@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="vertical-line">
+                <h3>About Us</h3>
+            </div>
+            <p>We simplify your dining experience. Explore local restaurants effortlessly, Join us and redefine your culinary journey.</p>
+            <div class="social-icons">
+                <img src="photo/facebook-icon.png" alt="Facebook">
+                <img src="photo/twitter-icon.png" alt="Twitter">
+                <img src="photo/instagram-icon.png" alt="Instagram">
+                <img src="photo/linkedin-icon.png" alt="LinkedIn">
+            </div>
+        </div>
+    </footer>
+	
+    <script>
+	
+    
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+		
+		
+    </script>
+</body>
+
+</html>

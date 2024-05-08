@@ -1,0 +1,211 @@
+
+
+/* styles.css */
+.page-header {
+
+    margin-top: 100px;
+}
+.page-header h1 {
+    margin-left: 200px; /* Adjust margin to move the h1 to the right */
+    font-size: 40px; /* Increase the font size of the h1 */
+	color:#548776;
+}
+
+
+.line {
+    width: 75%;;
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+.breadcrumbs {
+font-size: 20px !important;
+    margin-top: 10px;
+position: absolute;
+    left: 200px;
+	}
+	/* styles.css */
+.search-box {
+    margin-top: 80px;
+    position: relative;
+    left: 180px;
+	margin-bottom:50px;
+}
+
+.search-box input[type="text"] {
+    width: 260px;
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: auto;
+}
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+    gap: 20px;
+    max-width: 900px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.restaurant-list .restaurant {
+    width: calc(50% - 40px); /* Two restaurants per row with a gap of 20px */
+
+    border: 2px solid #548776;
+    
+    padding: 20px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Include padding and border in the box size calculation */
+	margin-bottom:50px;
+	height: 430px;
+}
+
+.restaurant-list .restaurant img {
+    width: 100%;
+    max-width: 200px; /* Set a maximum width for the image */
+    height: auto;
+    border-radius: 5px; /* Optional: add border-radius to the image */
+    margin-left: 220px; /* Adjust the left margin to move the image to the right */
+	margin-top: -60px;
+	
+}
+.info {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurant {
+    position: relative; /* Ensure relative positioning */
+}
+.restaurant-list .restaurant:first-child img {
+    border: 2px solid #808b53; /* Add border around the first restaurant image */
+    border-radius: 50%; /* Make the border circular */
+}
+
+.rating {
+    position: absolute;
+    top: 10px; /* Adjust the vertical position */
+    left: 10px; /* Adjust the horizontal position */
+    color: #548776;
+    padding: 2px 8px;
+    font-size: 22px;
+}
+
+
+.restaurant-list .restaurant .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%; /* Make sure the info container takes up the full height */
+}
+
+.restaurant-list .restaurant .delivery-time {
+    font-style: italic;
+    color: #888;
+    margin-top: auto; /* Push the delivery time to the bottom */
+    margin-left: 100px; /* Adjust the left margin for consistent positioning */
+}
+.restaurant-list .restaurant {
+    position: relative;
+}
+
+.restaurant-list .restaurant .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%; /* Make sure the info container takes up the full height */
+}
+
+.restaurant-list .restaurant .delivery-time {
+    font-style: italic;
+    color: #888;
+    position: absolute; /* Position the delivery time absolutely */
+    bottom: 20px; /* Adjust the vertical position */
+    left: -300px; /* Adjust the horizontal position */
+}
+.car-icon {
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Set position to relative */
+    left: -10px; /* Adjust the left position to move the icon to the left */
+	top:30px;
+    vertical-align: middle; /* Align the icon vertically */
+    width: 40px !important; /* Adjust the width of the car icon as needed */
+}
+
+
+
+
+
+.details h3 {
+    margin-top: 0;
+	font-size:24px;
+}
+.view-button {
+    background-color: white; /* Set button background color */
+	color: #548776;
+    border: 1px solid #548776; /* Remove button border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Set cursor to pointer on hover */
+    border-radius: 20px; /* Add border radius */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+	width: 150px; /* Set button width */
+	margin-left: 180px;
+}
+
+.view-button:hover {
+	
+    background-color: #548776; /* Set button background color */
+    color: white; /* Set text color */
+}
+
+
+.delivery-time {
+    margin-top: 70px; /* Push the delivery time to the bottom */
+    font-style: italic;
+    color: #888; /* Adjust color as needed */
+	font-size: 18px; /* Increase the font size */
+    font-weight: bold; 
+	
+}
+
+h1 span{
+	font-size:15px;
+	margin-left: 380px;
+}
+
+.restaurant:nth-last-child(-n+2) {
+    display: none;
+}
+#moreButton {
+    background-color: #548776; /* Change background color */
+    color: white; /* Change text color */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Apply border radius */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 20px; /* Adjust font size */
+    cursor: pointer; /* Set cursor to pointer */
+    position: relative; /* Set button position to relative */
+    margin-left: 650px; /* Adjust left margin */
+    z-index: 999; /* Set z-index to ensure it's above other elements */
+    transition: background-color 0.3s, color 0.3s; /* Add transition for color change */
+}
+
+
+
+#moreButton:hover {
+    background-color: #54798b; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}

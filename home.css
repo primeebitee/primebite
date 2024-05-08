@@ -1,0 +1,1075 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links {
+            display: flex; /* Make the navigation links flexbox */
+            flex-direction: row;
+            gap: 20px; /* Add gap between navigation links */
+        }
+
+        .nav-link {
+            text-decoration: none; /* Remove default underline */
+            color: #333; /* Set text color */
+            font-weight: bold; /* Make text bold */
+            border: 1px solid transparent; /* Add transparent border */
+			border-radius:15px;
+            padding: 40px 10px; /* Add padding to the links */
+            transition: border-color 0.3s; /* Smooth transition for border color */
+        }
+
+        .nav-link:hover,
+        .nav-links:hover .nav-link {
+            border-color: #568676; /* Change border color on hover */
+						background-color:#568676;
+
+        }
+
+        .nav-link:focus {
+            outline: none; /* Remove default focus outline */
+            border-color: #568676; /* Change border color when link is focused */
+			background-color:#568676;
+        }
+body{
+	margin-top: 20px;
+	    overflow-x: hidden;
+
+	
+}
+
+.nav-container {
+    position: relative; /* Ensure relative positioning */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    border: 1px solid #507f6f;
+    border-radius: 12px;
+    padding: 15px; /* Add padding to create space between items and border */
+	    right: 60px; 
+	font-style: bold;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 300px; /* Adjust spacing between navigation items */
+}
+nav ul li:last-child {
+    margin-right: 50px; /* Remove margin from last item */
+}
+
+#logo img {
+    position: absolute; /* Position the logo absolutely */
+    width: 200px;
+    height: 180px;
+    left: 1%; /* Move the logo 25% from the left edge of the page */
+    
+    transform: translateY(-50%); /* Adjust for centering */
+    margin-right: 10px;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #548776;
+    border-left: 1px solid #548776;
+    border-right: 1px solid #548776;
+    border-bottom: none;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+
+.footer-left img {
+    width: 100px; /* Adjust image size as needed */
+}
+
+.footer-left p {
+    font-size: 12px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+}
+
+.footer-middle, .footer-right {
+    text-align: center;
+}
+
+.social-icons, .contact-icons {
+    margin-top: 10px;
+}
+
+.footer-right img, .contact-icons img {
+    width: 30px; /* Adjust image size as needed */
+}
+
+.footer-right p {
+    margin-top: 10px;
+}
+.footer-left {
+    margin-right: 20px; /* Adjust margin to move the logo slightly to the right */
+}
+
+.vertical-line {
+    border-left: 1px solid #548776; /* Add a vertical line */
+    height: 20px; /* Adjust height as needed */
+}
+
+.vertical-line:last-child {
+    display: none; /* Hide the vertical line after the last section */
+}
+
+.footer-left img {
+    width: 170px; /* Adjust image size as needed */
+	
+}
+.footer-left  {
+	margin-left: 70px;
+}
+
+
+.footer-left p {
+    font-size: 12px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+}
+
+.footer-middle, .footer-right {
+    text-align: left;
+	flex: 0 0 auto; /* Ensure the footer right section doesn't grow */
+}
+.social-icons {
+    margin-top: 10px;
+    position: relative; /* Set the position to relative */
+    left: -40px; /* Adjust the left position as needed */
+}
+.footer-middle h3,
+.footer-right h3 {
+    font-size: 23px; /* Ensure that font-size is applied correctly */
+	margin-left:20px;
+}
+
+.social-icons, .contact-icons {
+    margin-top: 10px;
+}
+
+.footer-right img, .contact-icons img {
+    width: 60px; /* Adjust image size as needed */
+}
+
+.footer-right p {
+	 margin-top: 10px;
+    width: 200px; /* Set a specific width for the About Us description */
+    
+}
+.vertical-line {
+    border-left: 1px solid #548776;
+    height: 20px;
+    margin: 0 20px;
+}
+
+.footer-middle {
+    text-align: center;
+	margin-top:-50px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    border: 1px solid #e6e8dd;
+    border-radius: 15px;
+    box-sizing: border-box;
+    max-width: 1250px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+	background-color: #e6e8dd;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+	margin-bottom: 20px;
+	margin-top:30px;
+}
+
+
+.left-panel  h1{
+    font-size: 80px;
+}
+
+.left-panel p {
+    font-family: serif;
+    font-size: 20px;
+    color: #9a9d95;
+    font-weight: bold; /* Corrected font weight property */
+}
+
+.right-panel {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-panel img {
+    max-width: 100%; /* Ensure the image fits within the right panel */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.dialog-box {
+    margin-top: 100px; /* Add margin to create space above the dialog box */
+    text-align: center; /* Center the elements horizontally */
+}
+
+.dialog-box input[type="text"] {
+width: 95%; /* Set the width of the input field */
+    height: 40px; /* Set the height of the input field */
+    padding: 5px;
+    margin-bottom: 50px; /* Add some space below the input box */
+    text-align: left; /* Align the text to the left */
+	border-radius: 30px;
+border: 1px solid white;
+}
+
+.dialog-box button,
+.dialog-box p {
+    display: inline-block; /* Display items inline-block to appear on the same line */
+    margin-right: 10px; /* Add some space between the buttons and paragraph */
+}
+
+
+.dialog-box button {
+    padding: 15px 70px; /* Adjust padding to change button size */
+    margin-right: 10px; /* Add margin between buttons */
+    border: 2px solid #548776; /* Set border color and thickness */
+    border-radius: 40px; /* Add curved borders */
+    background-color: #548776;
+    color: white; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    display: inline-block; /* Make the buttons display inline */
+}
+.dialog-box button:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+.our-vision {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.our-vision h2 {
+    font-size: 36px; /* Adjust font size as needed */
+    border-bottom: 2px solid #548776; /* Adjust border thickness */
+    display: inline-block;
+    padding-bottom: 10px; /* Adjust padding bottom to increase underline height */
+width: 30%; /* Adjust the width of the line */
+    margin: 0 auto; /* Center the line horizontally */
+
+}
+
+.points {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.point {
+    text-align: center;
+}
+.point:nth-child(1) img {
+	height:150px;
+    width: 150px;
+}
+
+.point:nth-child(2) img {
+	
+	height:150px;
+    width: 220px;
+}
+
+.point:nth-child(3) img {
+    
+	height:140px;
+    width: 190px;
+}
+.point h3{
+	font-family:serif;
+	
+	font-size: 25px;
+	
+}
+.point  p{
+	color:#808b53;
+	justify-content: Center;
+	width: 60%; /* Set the width of the paragraph container */
+    margin: 0 auto; /* Center the paragraph horizontally */
+	
+}
+
+.offercontainer {
+    padding: 20px;
+    border: 2px solid #548776;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+	 
+    margin-top: 60px;
+}
+
+.offer h2 {
+	font-size:40px;
+    text-align: left;
+    color: black;
+
+}
+
+.offer-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offer-item {
+	position: relative;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 2px solid #548776;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.offer-details {
+    position: relative;
+    display: flex; /* Added to align items horizontally */
+    align-items: center; /* Added to center items vertically */
+}
+
+
+.offer-details img {
+    max-width: 100px; /* Adjusted image size */
+    height: auto;
+    margin-left: auto; /* Align image to the right */
+    margin-right: 20px; /* Added spacing between image and text */
+}
+.rating {
+    position: absolute;
+    top: 10px;
+    left: -10px; /* Adjusted left position */
+    background-color: #548776;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.offer-price {
+    display: flex; /* Added to align items horizontally */
+    align-items: center; /* Added to center items vertically */
+    margin-top: 10px; /* Added spacing between rating and price */
+}
+
+.offer-price p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 0px; /* Added spacing between price and button */
+}
+
+.offer-price button {
+    padding: 10px 20px;
+    background-color: #548776;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.offer-price button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #548776; /* Added border on hover */
+}
+.offercontainer {
+    padding: 20px;
+    border: 2px solid #548776;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.offer h2 {
+    font-size: 40px;
+    text-align: left;
+    color: black;
+    margin-bottom: 40px; /* Added space below the heading */
+}
+.offer-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px; /* Add space between offer-sets */
+}
+
+.offer-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 2px solid #548776;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.offer-details {
+    display: flex;
+    align-items: center;
+}
+
+.offer-details img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px; /* Adjusted spacing between image and text */
+}
+
+.restaurant {
+    flex: 1;
+}
+
+.offer-price {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating {
+    background-color: #548776;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.offer-price p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 160px; /* Adjusted spacing between price and button */
+}
+
+.offer-price button {
+    padding: 10px 20px;
+    background-color: #548776;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.offer-price button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #548776; /* Added border on hover */
+}
+
+.offer-details .restaurant-info {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add margin to separate from the image */
+}
+.offer-details img {
+    max-width: 200px; /* Adjusted image size */
+    height: auto;
+	position: relative; /* Set position to relative */
+    left: 65px; /* Move the image to the right */
+    margin-top: -70px;
+}
+
+
+.offer-details {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.restaurant-info {
+    text-align: center; /* Align restaurant information to the center */
+    margin-top: 10px; /* Add margin to separate from the image */
+}
+
+
+.offer-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 2px solid #548776;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+#slider h3 {
+    font-size: 30px; /* Adjust the font size as needed */
+    color: #548776; /* Change the color to your desired color */
+}
+#slider {
+	
+   margin: 0 auto;
+   width: 800px;
+   max-width: 100%;
+   text-align: center;
+}
+#slider input[type=radio] {
+   display: none;
+}
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
+}
+#slides {
+   padding: 10px;
+   border: 3px solid #ccc;
+   background: #fff;
+   position: relative;
+   z-index: 1;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
+}
+#slides .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   line-height: 0;
+   height: 300px;
+}
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: #fff;
+}
+#slides .slide_1 {
+   background: #e6e8dd;
+}
+#slides .slide_2 {
+   background: #548776;
+}
+#slides .slide_3 {
+   background: #cbdb5c;
+}
+#slides .slide_4 {
+   background: #46540e;
+}
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
+}
+#controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: .4;
+}
+#controls label:hover {
+   opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+   float:right;
+   margin: 0 -50px 0 0;
+   display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+   background: white no-repeat;
+   float:left;
+   margin: 0 0 0 -50px;
+   display: block;
+}
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
+}
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: #ccc;
+   margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+   background: #444;
+}
+@media screen and (max-width: 900px) {
+   #slide1:checked ~ #controls label:nth-child(2),
+   #slide2:checked ~ #controls label:nth-child(3),
+   #slide3:checked ~ #controls label:nth-child(4),
+   #slide4:checked ~ #controls label:nth-child(1),
+   #slide1:checked ~ #controls label:nth-last-child(2),
+   #slide2:checked ~ #controls label:nth-last-child(3),
+   #slide3:checked ~ #controls label:nth-last-child(4),
+   #slide4:checked ~ #controls label:nth-last-child(1) {
+      margin: 0;
+   }
+   #slides {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+   }
+}
+.slide-content {
+    display: flex;
+    align-items: center;
+}
+
+.slide-content .img-container {
+    width: 40%; /* Adjust width as needed */
+    margin-right: 20px; /* Add margin for spacing */
+}
+
+.slide-content img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+}
+.review-details {
+    flex: 1; /* Let the review details section grow to fill available space */
+    margin-left: 20px; /* Add margin for separation */
+    line-height: 1.5; /* Set the line height to create space between lines */
+}
+
+.review-details p {
+    margin-bottom: 10px; /* Add space below each paragraph */
+	font-weight: bold; 
+}
+
+
+.rating-container {
+    text-align: center; /* Align the content of the rating container to the center */
+	
+    margin-top: 60px; /* Add margin between paragraphs and rating container */
+    
+}
+
+.rating-container #revrating {
+    margin-top: 300px; /* Add margin between paragraphs and rating container */
+    margin-left: 550px;
+    border: none; /* Remove the border from the rating */
+}
+
+
+.nav-links {
+            display: none;
+        }
+
+        /* Show the hamburger icon when the screen width matches a certain breakpoint */
+        .hamburger-icon {
+            display: none; /* Hide the hamburger icon by default */
+        }
+		
+		
+/* Media Query for screens up to 320px */
+@media screen and (max-width: 320px) {
+    /* Adjustments for header */
+    header {
+        padding: 5px;
+    }
+
+    /* Adjustments for logo */
+    #logo img {
+        width: 120px;
+        height: 100px;
+    }
+
+    /* Adjustments for navigation links */
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+    }
+
+    /* Adjustments for main content */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-panel {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .left-panel h1 {
+        font-size: 40px;
+    }
+
+    .left-panel p {
+        font-size: 14px;
+    }
+
+    .right-panel {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .right-panel img {
+        max-width: 100%;
+    }
+
+    .dialog-box input[type="text"] {
+        width: 90%;
+    }
+
+    .dialog-box button {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Adjustments for offer items */
+    .offer-item {
+        width: 100%;
+    }
+
+    .offer-details img {
+        max-width: 80px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .rating {
+        font-size: 12px;
+    }
+
+    .restaurant-info {
+        text-align: left;
+    }
+
+    .offer-price p {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .offer-price button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Adjustments for customer reviews */
+    #slider {
+        width: 300px;
+    }
+
+    .slide-content .img-container {
+        width: 30%;
+    }
+
+    .slide-content img {
+        width: 100%;
+    }
+
+    .review-details {
+        margin-left: 10px;
+    }
+
+    .rating-container {
+        margin-top: 20px;
+    }
+
+    .rating-container #revrating {
+        margin-top: 50px;
+    }
+	
+	
+    .slide-content{
+        width: unset;
+        margin-right: unset;
+    
+    }
+    .slide-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* Center text horizontally */
+    }
+
+    .img-container {
+        order: -1;
+        /* Move the image container to the top */
+        margin-bottom: 10px;
+        /* Add some space between the image and text */
+    }
+
+    .img-container img {
+        max-width: 100%;
+        /* Ensure the image doesn't exceed its container width */
+    }
+
+    #slides .inner {
+        height: unset;
+    }
+	
+	 .hamburger-icon {
+                display: block;
+                text-align: right;
+                margin-right: 20px; /* Adjust margin as needed */
+            }
+
+            /* Style for hamburger icon */
+            .hamburger-icon .icon {
+                width: 30px;
+                height: 3px;
+                background-color: #000;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+
+            /* Rotate the first and third line to form an 'X' when active */
+            .hamburger-icon.active .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .hamburger-icon.active .line2 {
+                opacity: 0;
+            }
+
+            .hamburger-icon.active .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+
+            /* Show navigation links when hamburger icon is clicked */
+            .hamburger-icon:hover {
+                cursor: pointer;
+            }
+
+            .hamburger-icon.active + .nav-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: #f2f2f2; /* Background color for the dropdown */
+                position: absolute;
+                top: 60px; /* Adjust top position as needed */
+                left: 0;
+                right: 0;
+                z-index: 999;
+            }
+
+            .hamburger-icon.active + .nav-links ul li {
+                margin: 10px 0;
+            }
+}
+
+
+/* Media query for small screens */
+@media screen and (max-width: 767.98px) {
+
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .dialog-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-panel h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .offer-details img{
+        max-width: 150px;
+    }
+    .offer-set{
+        gap: 2rem;
+    }
+    .offer-item {
+        width: 100%;
+        /* Each cart takes up 100% of the width on small screens */
+    }
+
+    .points {
+        flex-direction: column;
+    }
+    .slide-content{
+        width: unset;
+        margin-right: unset;
+    
+    }
+    .slide-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* Center text horizontally */
+    }
+
+    .img-container {
+        order: -1;
+        /* Move the image container to the top */
+        margin-bottom: 10px;
+        /* Add some space between the image and text */
+    }
+
+    .img-container img {
+        max-width: 100%;
+        /* Ensure the image doesn't exceed its container width */
+    }
+
+    #slides .inner {
+        height: unset;
+    }
+
+    .slide-content .img-container {
+        width: unset;
+        margin-right:unset ;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-panel,
+    .right-panel {
+        flex: 100%;
+        /* Make panels take full width on small screens */
+        padding: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contact-info{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Show hamburger icon */ /* Show hamburger icon */
+    .hamburger-icon {
+        display: block;
+        text-align: right;
+        margin-right: 20px; /* Adjust margin as needed */
+    }
+
+    /* Style for hamburger icon */
+    .hamburger-icon .icon {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    /* Rotate the first and third line to form an 'X' */
+    .hamburger-icon.active .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger-icon.active .line2 {
+        opacity: 0;
+    }
+
+    .hamburger-icon.active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Show navigation links when hamburger icon is clicked */
+    .hamburger-icon:hover {
+        cursor: pointer;
+    }
+
+    .hamburger-icon.active + .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #f2f2f2; /* Background color for the dropdown */
+        position: absolute;
+        top: 60px; /* Adjust top position as needed */
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .hamburger-icon.active + .nav-links ul li {
+        margin: 10px 0;
+    }
+	
+}
+
+
+

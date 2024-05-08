@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+		    <link rel="stylesheet" href="../header-footer.css">
+
+    <link rel="stylesheet" href="customer.css">
+	
+			  <style>
+			  .dark-mode-button {
+    padding: 12px 40px; /* Adjust padding to change button size */
+    border: 2px solid #548776; /* Set border color and thickness */
+    border-radius: 40px; /* Add curved borders */
+    background-color: #548776;
+    color: white; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;   /* Cursor changes to pointer when hovered */
+	    margin-left: 78%; /* Add margin to the left to move the button right */
+		 position: relative; /* Use relative positioning */
+    bottom: 12px; /* Move up by reducing the bottom margin */
+
+}
+
+/* Style for the button when hovering over it */
+.dark-mode-button:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+			  
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+ 
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+		.dark-mode .breadcrumbs a {
+    color: #ffffff; /* Set breadcrumb links to white in dark mode */
+}
+
+        .dark-mode .contact-item a{
+            color: white;
+        }
+		        
+        .dark-mode .restaurant
+{
+	background-color: #e6e8dd;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header> 
+        <div id="logo">
+            <img src="photo/logo.png" alt="Logo">
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="../home/index.html" class="nav-link">Home</a></li>
+                    <li> <a href="../owner/Owner.html" class="nav-link">Owner</a></li>
+                    <li> <a href="../customer/customer.html" class="nav-link">Customer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+     <main>
+	 
+	 <div>
+<button onclick="darkMode()" id="change" class="dark-mode-button">Dark Mode</button>
+    </div>
+    <div class="page-header">
+        
+        <h1>What's in your mind?<span id="currentWeekDate"></span></h1>
+        <hr class="line">
+        <div class="breadcrumbs">
+            <a href="../home/index.html">Home page</a> &gt; <a href="../customer/customer.html">customer</a>  
+        </div>
+        <div class="search-box">
+    <input type="text" placeholder="Search" id="searchBox">
+    <img src="photo/search-icon.png" alt="Search" class="search-icon" id="searchIcon">
+</div>
+    </div>
+        
+    <div class="restaurant-list">
+        <div class="restaurant"id="piatto">
+           <a href="../resturantpage/ResturantPage.html" ><img src="photo/restaurant1.png" alt="Restaurant 1"></a>
+            <div class="info">
+                <div class="rating">4.3<span class="star">★</span></div>
+                <div class="details">
+                    <h3>Piatto</h3>
+                    <p>Authentic Italian Delivered. Wood-fired pizzas, classic pastas, and fresh salads brought straight to your door. Order online for a taste of Italy at home.</p>
+                    <a href="../resturantpage/ResturantPage.html"><button class="view-button">View</button></a>
+                </div>
+                <div class="delivery-time"><img src="photo/car_icon.png" alt="Car Icon" class="car-icon"> 60 minutes</div>
+            </div>
+        </div>
+        <div class="restaurant" id="kfc">
+            <img src="photo/restaurant2.png" alt="Restaurant 2">
+            <div class="info">
+                <div class="rating">4.2<span class="star">★</span></div>
+                <div class="details">
+                    <h3>KFC</h3>
+                    <p>KFC is known for its secret blend of 11 herbs and spices used to season its signature fried chicken. Alongside chicken, KFC offers a range of sides such as mashed potatoes, coleslaw, and biscuits.</p>
+                    <a href="#"><button class="view-button">View</button></a>
+                </div>
+                <div class="delivery-time"><img src="photo/car_icon.png" alt="Car Icon" class="car-icon"> 25 minutes</div>
+            </div>
+        </div>
+        <!-- Repeat the structure for four more restaurants -->
+        <!-- Example: -->
+        <div class="restaurant"id="pizza hut">
+            <img src="photo/restaurant3.png" alt="Restaurant 3">
+            <div class="info">
+                <div class="rating">4.0<span class="star">★</span></div>
+                <div class="details">
+                    <h3>Pizza Hut</h3>
+                    <p>Pizza Hut is a popular chain specializing in pizza. Offering a wide variety of pizza toppings and crust styles,  also serves pasta dishes, wings, breadsticks, and desserts. Known for its iconic red roof logo.</p>
+                    <a href="#"><button class="view-button">View</button></a>
+                </div>
+                <div class="delivery-time"><img src="photo/car_icon.png" alt="Car Icon" class="car-icon"> 39 minutes</div>
+            </div>
+        </div>
+        <div class="restaurant"id="Domino's Pizza">
+            <img src="photo/restaurant4.png" alt="Restaurant 4">
+            <div class="info">
+                <div class="rating">4.8<span class="star">★</span></div>
+                <div class="details">
+                    <h3>Domino's Pizza</h3>
+                    <p>Domino's offers a variety of pizza options along with sides like chicken wings, breadsticks, and desserts. They are known for their "30 minutes or less" delivery promise.</p>
+                    <a href="#"><button class="view-button">View</button></a>
+                </div>
+                <div class="delivery-time"><img src="photo/car_icon.png" alt="Car Icon" class="car-icon">35 minutes</div>
+            </div>
+        </div>
+        <div class="restaurant "id="burger king">
+            <img src="photo/restaurant5.png" alt="Restaurant 5">
+            <div class="info">
+                <div class="rating">4.3<span class="star">★</span></div>
+                <div class="details">
+                    <h3>Burger King</h3>
+                    <p>Burger King offers a variety of burgers, chicken sandwiches, salads, fries, and desserts. Their slogan "Have It Your Way" emphasizes customization options for their menu items.</p>
+                    <a href="#"><button class="view-button">View</button></a>
+                </div>
+                <div class="delivery-time"><img src="photo/car_icon.png" alt="Car Icon" class="car-icon">50 minutes</div>
+            </div>
+        </div>
+        <div class="restaurant"id="chipotle">
+            <img src="photo/restaurant6.png" alt="Restaurant 6">
+            <div class="info">
+                <div class="rating">4.7<span class="star">★</span></div>
+                <div class="details">
+                    <h3>Chipotle Mexican Grill</h3>
+                    <p>Chipotle offers a selection of meats, beans, rice, salsas, and toppings. Chipotle emphasizes fresh ingredients and sustainable sourcing practices.</p>
+                    <a href="#"><button class="view-button">View</button></a>
+                </div>
+                <div class="delivery-time"><img src="photo/car_icon.png" alt="Car Icon" class="car-icon">37 minutes</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="AccesKey"> 
+        <a href="../home/index.html" accesskey="H"></a>
+        <a href="../customer/customer.html" accesskey="C"></a>
+        <a href="../owner/Owner.html" accesskey="N"></a>
+    </div>
+	<button id="moreButton">More</button>
+
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <img src="photo/logo.png" alt="Logo">
+            <p>&copy; 2024 swiftbite. All rights reserved.</p>
+        </div>
+        <div class="footer-middle">
+             <div class="vertical-line">
+                <h3>Get in touch</h3>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                                        <img src="photo/phone-icon.png" alt="Phone">
+                    <p>+966123456789</p>
+                </div>
+                <div class="contact-item">
+                    <img src="photo/email-icon.png" alt="Email">
+<p><a href="mailto:swiftbite@gmail.com">swiftbite@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="vertical-line">
+                <h3>About Us</h3>
+            </div>
+            <p>We simplify your dining experience. Explore local restaurants effortlessly, Join us and redefine your culinary journey.</p>
+            <div class="social-icons">
+                <img src="photo/facebook-icon.png" alt="Facebook">
+                <img src="photo/twitter-icon.png" alt="Twitter">
+                <img src="photo/instagram-icon.png" alt="Instagram">
+                <img src="photo/linkedin-icon.png" alt="LinkedIn">
+            </div>
+        </div>
+    </footer>
+<script src="customer.js"></script>
+
+</body>
+</html>
+

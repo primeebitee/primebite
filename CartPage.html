@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Cart Page</title>
+			    <link rel="stylesheet" href="../header-footer.css">
+
+    </head>
+<style>
+    
+.container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ebebeb8c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #548776;
+    padding-bottom: 10px;
+}
+
+.Item img {
+    border-radius: 30%;
+    margin-right: 50px;
+}
+
+.name h3 {
+    color: rgb(54, 54, 54);
+    width: 200px;
+  
+}
+
+.Price {
+    margin-top: 50px;
+    margin-right: auto; /* Move the price to the right */
+   position: relative;
+   left: 150px;
+   
+}
+
+.quantity {
+    width: 250px;
+}
+
+button {
+    padding: 10px 10px;
+    margin-right: 90px; /*  margin between buttons */
+    border: 2px solid #548776;
+    border-radius: 40px;
+    background-color: #548776;
+    color: white;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.quantity input {
+    width: 40px;
+}
+
+.quantity input:hover {
+    cursor: pointer;
+}
+
+.ClearCheckB {
+    text-align: center;
+}
+
+textarea {
+    width: 10%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #548776;
+    resize: none;
+    position: relative;
+    left: 75%;
+}
+
+.payInfo {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    bottom: 70px;
+}
+
+.PaymentMethod ul li {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.PaymentMethod ul li:hover {
+    cursor: pointer;
+}
+
+hr {
+    width: 75%;
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+h1 {
+    margin-left: 200px; /* Adjust margin to move the h1 to the right */
+    font-size: 40px; /* Increase the font size of the h1 */
+    color: #548776;
+    margin-top: 100px;
+}
+
+.navigationBar ol {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 5%;
+    font-size: 20px;
+    margin-top: 10px;
+    position: absolute;
+    left: 200px;
+}
+
+a {
+    color: black;
+}
+
+			  .dark-mode-button {
+    padding: 12px 40px; /* Adjust padding to change button size */
+    border: 2px solid #548776; /* Set border color and thickness */
+    border-radius: 40px; /* Add curved borders */
+    background-color: #548776;
+    color: white; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;   /* Cursor changes to pointer when hovered */
+	    margin-left: 78%; /* Add margin to the left to move the button right */
+		 position: relative; /* Use relative positioning */
+    bottom: 12px; /* Move up by reducing the bottom margin */
+
+}
+
+/* Style for the button when hovering over it */
+.dark-mode-button:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+			  
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+ 
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+		
+		.dark-mode .navigationBar a {
+    color: #ffffff; /* Set breadcrumb links to white in dark mode */
+}
+
+        .dark-mode .contact-item a{
+            color: white;
+        }
+</style>
+
+
+<body>
+
+    <header> 
+        <div id="logo">
+            <img src="photo/logo.png" alt="Logo">
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="../home/index.html" class="nav-link">Home</a></li>
+                    <li> <a href="../owner/Owner.html" class="nav-link">Owner</a></li>
+                    <li> <a href="../customer/customer.html" class="nav-link">Customer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main>
+
+
+	 <div>
+<button onclick="darkMode()" id="change" class="dark-mode-button">Dark Mode</button>
+    </div>
+<h1>My Cart</h1> <hr>
+
+<nav class="navigationBar" > 
+    <ol>
+    <li><a href="../home/index.html">Home Page  &gt;  </a></li>
+    <li><a href="../customer/customer.html">Customer  &gt; </a> </li>
+    <li><a href="../resturantpage/ResturantPage.html"> restaurant page  &gt; </a></li>
+    <li><a href="../cart/CartPage.html"> Cart  </a></li>
+    </ol>
+    </nav>
+<div class="container"> 
+
+<h2>Order Details</h2>
+<div class="items">
+<div class="Item">
+<img src="photo/Pancakes-1.jpg" alt="Cream caramel" height="130" width="130">
+<h3 class="name">Pancakes</h3>
+<div class="Price">
+    Price : 42 Sr
+</div>
+
+<div class="quantity">
+    Quantity : <input type ="number"  value="1" min="1" >
+</div>
+
+<div class="DeleteItem"> 
+        <button >Delete Item</button>
+</div>
+</div>
+
+<div class="Item">
+    <img src="photo/Avocado Bruschetta.jpg" alt="Avocado toast" height="130" width="130">
+    <h3 class="name" >Avocado toast</h3>
+    
+    <div class="Price">
+    
+       Price : 42 
+    </div>
+
+    <div class="quantity">
+    Quantity : <input type ="number" value="1" min="1">
+    </div>
+
+    <div class="DeleteItem"> 
+        <button>Delete Item</button>
+    </div>
+    </div>
+
+    <div class="Item">
+        <img src="photo/Passion-juice.jpg" alt="Passion Fruit juice" height="130" width="130">
+        <h3 class="name">Passion Fruit juice</h3>
+       
+        <div class="Price">
+            Price : 26 
+        </div>
+
+        <div class="quantity">
+        Quantity : <input type ="number" value="1" min="1">
+        </div>
+
+        <div class="DeleteItem"> 
+            <button>Delete Item</button>
+    </div>
+     </div>
+  </div>
+ <div class="TextArea"> <textarea maxlength="50"> Add your note here &#10245&#10089 </textarea></div>
+
+
+
+<div class="PaymentMethod">
+    <ul>
+    <li>Apple Pay <img src="photo/apple-pay-logo.png" alt="Apple Pay" width="50" height="50"></li>
+    <li>Cash <img src="photo/cash-payment.png" alt="Cash" width="50" height="50"></li>
+    </ul>
+    </div>
+
+<div class="ClearCheckB">
+  <button onclick="clearCart()" >Clear Cart</button>
+  <a href="../review/Review.html"><button onclick="checkout()" >Checkout</button></a>
+ </div>
+
+</div>
+
+
+<div class="AccesKey"> 
+<a href="../home/index.html" accesskey="H"></a>
+<a href="../customer/customer.html" accesskey="C"></a>
+<a href="../owner/Owner.html" accesskey="N"></a>
+</div>
+</main>
+
+
+    <footer>
+        <div class="footer-left">
+            <img src="photo/logo.png" alt="Logo">
+            <p>&copy; 2024 swiftbite. All rights reserved.</p>
+        </div>
+        <div class="footer-middle">
+            <div class="vertical-line">
+                <h3>Get in touch</h3>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="photo/phone-icon.png" alt="Phone">
+                    <p>+966123456789</p>
+                </div>
+                <div class="contact-item">
+                    <img src="photo/email-icon.png" alt="Email">
+<p><a href="mailto:swiftbite@gmail.com">swiftbite@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="vertical-line">
+                <h3>About Us</h3>
+            </div>
+            <p>We simplify your dining experience. Explore local restaurants effortlessly, Join us and redefine your culinary journey.</p>
+            <div class="social-icons">
+                <img src="photo/facebook-icon.png" alt="Facebook">
+                <img src="photo/twitter-icon.png" alt="Twitter">
+                <img src="photo/instagram-icon.png" alt="Instagram">
+                <img src="photo/linkedin-icon.png" alt="LinkedIn">
+            </div>
+        </div>
+    </footer>
+    <script src="Cmain.JS"></script>
+</body>
+</html>

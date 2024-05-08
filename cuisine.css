@@ -1,0 +1,407 @@
+
+
+
+
+/* styles.css */
+.page-header {
+
+    margin-top: 100px;
+}
+.page-header h1 {
+    margin-left: 200px; /* Adjust margin to move the h1 to the right */
+    font-size: 40px; /* Increase the font size of the h1 */
+	color:#548776;
+}
+
+
+.line {
+    width: 75%;;
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+.breadcrumbs {
+font-size: 20px !important;
+    margin-top: 10px;
+position: absolute;
+    left: 200px;
+ margin-bottom: 20px !important; 	
+	}
+	
+	.container {
+    width: 1000px;
+    height: 1230px;
+    margin: 90px auto 50px auto !important; /* Adjust margin-top to create space */
+    border: 2px solid #548776;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+.add-picture {
+    text-align: center; /* Center align the content */
+    margin-bottom: 70px; /* Add some space below the "Add picture" section */
+}
+
+.add-picture-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.add-picture-header h2 {
+    font-size: 70px;
+    margin: -20px 0 0; /* Adjust the top margin to raise it up */
+    color: #528272;
+}
+
+.picture-info {
+    position: absolute;
+	bottom: 860px; /* Adjust bottom position as needed */
+    left: 300px; /* Adjust left position as needed */
+}
+.picture-info img {
+    width: 170px; /* Adjust width as needed */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
+
+
+
+
+
+.add-picture h2 {
+    font-size: 70px;
+    margin: 0; /* Remove margin */
+	color:#528272;
+}
+
+
+.picture-container {
+	    position: relative; /* Make the container a positioned parent */
+
+    width: 500px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    background-color: #fff; /* Set background color for the picture container */
+    border: 2px solid #548776; /* Add border */
+    overflow: hidden; /* Hide overflow to prevent the input from sticking out */
+    margin-left: 80px; /* Add margin between h2 and picture container */
+	margin-top:30px;
+	margin-bottom:40px;
+}
+
+.picture-container input[type="file"] {
+    position: absolute; /* Position the input absolutely */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Make the input invisible */
+    width: 100%;
+    height: 100%;
+    cursor: pointer; /* Change cursor to pointer when hovering over the input */
+    z-index: 1; /* Ensure the input is above other elements */
+}
+
+.picture-container label {
+    position: absolute; /* Position the label absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; /* Change cursor to pointer when hovering over the label */
+    z-index: 2; /* Ensure the label is above other elements */
+}
+
+.picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+.meal-header {
+    text-align: center; /* Center the header text */
+    margin-bottom: 20px; /* Add space below the header */
+}
+
+.meal-header h2 {
+	font-size:25px;
+    display: inline-block; /* Ensure the header takes the necessary width */
+    background-color: white; /* Set the background color to match the header */
+    padding: 10px 60px; /* Add padding to the header */
+    border: 2px solid #548776; /* Set the border */
+    border-radius: 25px; /* Add border radius */
+}
+
+.meal-info-container {
+    border: 2px solid #548776;
+    margin: 20px auto;
+    padding: 10px; /* Adjust padding as needed */
+	height:530px;
+	width:900px;
+	
+}
+
+
+
+.meal-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+	margin-bottom:50px;
+}
+
+
+
+
+.meal-info label[for="description"] {
+    margin-bottom: 40px; /* Adjust the margin as needed */
+	
+}
+.meal-info-container .meal-info:nth-child(4) input[type="text"] {
+    height: 110px; /* Increase the height to make the input box taller */
+}
+
+/* Positioning container for the price input and the "$$" symbol */
+.meal-info-container .meal-info:nth-child(2) .input-container {
+    position: relative; /* Set the container as a positioning context */
+}
+
+/* Style for the "$$" symbol */
+.meal-info-container .meal-info:nth-child(2) .input-container::before {
+    content: "$$"; /* Add the "$$" symbol */
+    color: gray; /* Set the color to gray */
+    position: absolute; /* Position it absolutely */
+    left: 530px; /* Adjust the left position as needed */
+    top: 80%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+	    font-size: 24px; /* Set the font size to make it bigger */
+
+}
+
+
+/* Positioning container for the Calories input and the "kal" symbol */
+.meal-info-container .meal-info:nth-child(3) .input-container {
+    position: relative; /* Set the container as a positioning context */
+}
+
+/* Style for the "kal" symbol */
+.meal-info-container .meal-info:nth-child(3) .input-container::after {
+    content: "kal"; /* Add the "kal" symbol */
+    color: gray; /* Set the color to gray */
+    position: absolute; /* Position it absolutely */
+    left: 530px; /* Adjust the left position as needed */
+    top: 80%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 24px; /* Set the font size to make it bigger */
+}
+
+
+
+
+.meal-info label {
+	font-size:22px;
+	text-align:Center;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid #548776;
+	background-color:#548776;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+	margin-top:10px;
+    margin-left: 60px; /* Move the labels to the right */
+}
+.input-container {
+    width: 200px; /* Set the width of the input container */
+    height: 30px; /* Set the height of the input container */
+    position: relative;
+}
+
+.input-container input[type="text"] {
+	width: 350px; /* Adjust the width as needed */
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #548776;
+    border-radius: 30px;
+	margin-left: 200px; /* Adjust margin-left for overall spacing */
+}
+/* Buttons Styles */
+
+.buttons {
+    margin-top: 20px;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 60px; /* Add space between buttons */
+}
+
+.buttons button {
+    font-size: 15px;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.buttons button[type="submit"] {
+    background-color: #548776;
+    color: white;
+}
+
+.buttons button[type="submit"]:hover {
+    background-color: white;
+    color: #548776;
+    border: 1px solid #548776;
+}
+
+.buttons button[type="button"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+.buttons button[type="button"]:hover {
+    background-color: white;
+    color: #548776;
+    border: 1px solid #548776;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #548776;
+    border-left: 1px solid #548776;
+    border-right: 1px solid #548776;
+    border-bottom: none;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+
+.footer-left img {
+    width: 100px; /* Adjust image size as needed */
+}
+
+.footer-left p {
+    font-size: 12px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+}
+
+.footer-middle, .footer-right {
+    text-align: center;
+}
+
+.social-icons, .contact-icons {
+    margin-top: 10px;
+}
+
+.footer-right img, .contact-icons img {
+    width: 30px; /* Adjust image size as needed */
+}
+
+.footer-right p {
+    margin-top: 10px;
+}
+.footer-left {
+    margin-right: 20px; /* Adjust margin to move the logo slightly to the right */
+}
+
+.vertical-line {
+    border-left: 1px solid #548776; /* Add a vertical line */
+    height: 20px; /* Adjust height as needed */
+}
+
+.vertical-line:last-child {
+    display: none; /* Hide the vertical line after the last section */
+}
+
+.footer-left img {
+    width: 170px; /* Adjust image size as needed */
+	
+}
+.footer-left  {
+	margin-left: 70px;
+}
+
+
+.footer-left p {
+    font-size: 12px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+}
+
+.footer-middle, .footer-right {
+    text-align: left;
+	flex: 0 0 auto; /* Ensure the footer right section doesn't grow */
+}
+.social-icons {
+    margin-top: 10px;
+    position: relative; /* Set the position to relative */
+    left: -40px; /* Adjust the left position as needed */
+}
+.footer-middle h3,
+.footer-right h3 {
+    font-size: 23px; /* Ensure that font-size is applied correctly */
+	margin-left:20px;
+}
+
+.social-icons, .contact-icons {
+    margin-top: 10px;
+}
+
+.footer-right img, .contact-icons img {
+    width: 60px; /* Adjust image size as needed */
+}
+
+.footer-right p {
+	 margin-top: 10px;
+    width: 200px; /* Set a specific width for the About Us description */
+    
+}
+.vertical-line {
+    border-left: 1px solid #548776;
+    height: 20px;
+    margin: 0 20px;
+}
+
+.footer-middle {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
